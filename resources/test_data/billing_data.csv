@@ -1,0 +1,49 @@
+first_name,last_name,phone_number,country,street_address,city,post_code,payment_method
+Sanna,Sjöberg,050-274 8866,Finland,Alatie 0,Helsinki,41868,Direct Bank Transfer
+Rikard,Hansson,070-683 3196,Sweden,Gustafssons gata 2,Örebro,78514,Cash on Delivery
+Per,Danielsen,97584458,Norway,Johansens vei 8,Oslo,2253,Direct Bank Transfer
+Milla,Karjalainen,045 414 0713,Finland,Korpelantie 6,Espoo,89633,Check Payments
+Emil,Svensson,073-862 0141,Sweden,Björkgrensgatan 85,Uppsala,52273,Direct Bank Transfer
+Jens,Andersen,951 44 291,Norway,Larsens vei 2,Oslo,2816,Cash on Delivery
+Laura,Heikkinen,044 578 7335,Finland,Jokelantie 73,Oulu,60623,Cash on Delivery
+Olof,Björk,070-982 7297,Sweden,Åströms gata 67,Stockholm,39246,Check Payments
+Eirik,Johansen,98890564,Norway,Pedersens vei 60,Bergen,3530,Direct Bank Transfer
+Ville,Nieminen,040 418 2844,Finland,Salmenkatu 83,Tampere,26056,Direct Bank Transfer
+Sara,Larsson,073-243 3144,Sweden,Svenssons gata 74,Malmö,14718,Cash on Delivery
+Mats,Olsen,993 20 764,Norway,Andersens vei 3,Trondheim,4659,Check Payments
+Anna,Miettinen,050 142 9283,Finland,Järventie 33,Lahti,92941,Cash on Delivery
+Gustav,Nilsson,070-932 6407,Sweden,Johanssons gata 55,Göteborg,71327,Check Payments
+Anders,Berg,980 44 599,Norway,Hansens vei 56,Bergen,3947,Check Payments
+Petra,Lehtinen,046 521 6445,Finland,Lahdenkatu 6,Vantaa,23464,Check Payments
+Linn,Persson,073-578 5442,Sweden,Anderssons gata 2,Stockholm,41643,Direct Bank Transfer
+Arne,Haugen,954 28 152,Norway,Karlsens vei 1,Stavanger,1377,Direct Bank Transfer
+Mikko,Korhonen,040 575 5531,Finland,Koskentie 6,Turku,27368,Check Payments
+Elsa,Johansson,070-692 2438,Sweden,Nilssons gata 66,Umeå,45971,Cash on Delivery
+Tor,Kristiansen,951 74 289,Norway,Olsens vei 47,Oslo,4822,Direct Bank Transfer
+Aino,Salmi,044 137 2442,Finland,Lehdontie 16,Jyväskylä,91313,Cash on Delivery
+Hugo,Lindgren,072-356 4287,Sweden,Johanssons gata 13,Lund,24681,Direct Bank Transfer
+Kari,Andresen,987 13 256,Norway,Johansens vei 72,Oslo,1780,Check Payments
+Outi,Aalto,050 268 7158,Finland,Kalliotie 87,Kuopio,14292,Cash on Delivery
+Emma,Eriksson,073-119 7532,Sweden,Larssons gata 92,Uppsala,91143,Cash on Delivery
+Stian,Nilsen,976 54 329,Norway,Andersens vei 28,Trondheim,3825,Check Payments
+Tuomas,Hämäläinen,045 345 3952,Finland,Rantatie 23,Tampere,17494,Check Payments
+Alva,Holm,070-487 6925,Sweden,Johanssons gata 49,Stockholm,54411,Cash on Delivery
+Knut,Solberg,922 35 174,Norway,Larsens vei 6,Stavanger,4975,Cash on Delivery
+Helmi,Koivisto,044 694 8749,Finland,Mäntytie 31,Helsinki,79542,Check Payments
+Isak,Sjögren,072-837 2765,Sweden,Perssons gata 71,Malmö,82971,Direct Bank Transfer
+Jonas,Evensen,971 56 347,Norway,Olsens vei 55,Oslo,2954,Direct Bank Transfer
+Elina,Mäkelä,046 347 1266,Finland,Peltotie 29,Espoo,13789,Direct Bank Transfer
+Agnes,Bergström,073-456 7284,Sweden,Johanssons gata 91,Umeå,51482,Check Payments
+Henrik,Pedersen,930 84 275,Norway,Hansens vei 20,Bergen,2638,Cash on Delivery
+Oskari,Lahtinen,040 859 7152,Finland,Kuusitie 64,Turku,94855,Check Payments
+Ella,Sandberg,072-149 8235,Sweden,Anderssons gata 74,Göteborg,31726,Direct Bank Transfer
+Morten,Andreassen,991 72 465,Norway,Karlsens vei 81,Stavanger,3742,Check Payments
+Veera,Seppälä,050 932 6173,Finland,Hakatie 14,Oulu,20689,Cash on Delivery
+Filip,Ekström,073-916 5872,Sweden,Johanssons gata 39,Stockholm,27481,Cash on Delivery
+Sondre,Lie,968 21 475,Norway,Olsens vei 3,Oslo,1896,Cash on Delivery
+Johanna,Laine,044 623 7429,Finland,Kuovitie 22,Jyväskylä,71694,Check Payments
+Wilma,Dahl,072-238 8146,Sweden,Svenssons gata 23,Uppsala,84736,Direct Bank Transfer
+Kristian,Moe,947 59 438,Norway,Johansens vei 11,Trondheim,4980,Cash on Delivery
+Antti,Saari,045 748 1962,Finland,Haavistontie 20,Helsinki,43681,Direct Bank Transfer
+Ida,Löfgren,073-541 7869,Sweden,Johanssons gata 87,Göteborg,65529,Direct Bank Transfer
+Ole,Bakken,932 17 864,Norway,Karlsens vei 23,Bergen,2648,Cash on Delivery
