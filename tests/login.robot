@@ -1,6 +1,4 @@
 *** Settings ***
-Library    Browser
-
 Resource    ../resources/keywords/login_keywords/login.resource
 
 Test Setup       Open New Browser

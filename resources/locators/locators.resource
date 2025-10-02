@@ -14,8 +14,8 @@ ${SHOPPING_CART}    //a[@title='View your shopping cart']
 ${SEARCH_BAR}       //input[@id='s']
 
 # My account page locators
-${INPUT_USERNAME}    //input[@id='username']
-${INPUT_PASSWORD}    //input[@id='password']
+${LOGIN_USERNAME}    //input[@id='username']
+${LOGIN_PASSWORD}    //input[@id='password']
 ${LOGIN_BUTTON}      //input[@name='login']
 ${LOGOUT_BUTTON}     //a[normalize-space()='Logout']
 ${DASHBOARD}         //a[normalize-space()='Dashboard']
@@ -24,6 +24,10 @@ ${DOWNLOADS}         //a[normalize-space()='Downloads']
 ${ADDRESSES}         //a[normalize-space()='Addresses']
 ${ACCOUNT_DETAILS}   //a[normalize-space()='Account details']
 ${LOGIN_ERROR}       //ul[@class='woocommerce-error']
+${REGISTER_USERNAME}    //input[@id='reg_email']
+${REGISTER_PASSWORD}    //input[@id='reg_password']
+${REGISTER_BUTTON}      //input[@name='register']
+${EXISTING_REGISTER_ERROR}       //li[contains(text(),'An account is already registered with your email a')]
 
 # Shopping cart locators
 ${APPLY_COUPON}      //input[@name='apply_coupon']

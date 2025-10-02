@@ -25,4 +25,11 @@ class CustomLibrary:
         """
         Returns random billing data 
         """
-        return self._pick_random_row(csv_path)   
+        return self._pick_random_row(csv_path)
+    
+    @keyword
+    def get_register_data(self, csv_path: str = "register_data.csv"):
+        """
+        Returns random register data 
+        """
+        return self._pick_random_row(csv_path)
