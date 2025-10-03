@@ -24,9 +24,12 @@ ${DOWNLOADS}         //a[normalize-space()='Downloads']
 ${ADDRESSES}         //a[normalize-space()='Addresses']
 ${ACCOUNT_DETAILS}   //a[normalize-space()='Account details']
 ${LOGIN_ERROR}       //ul[@class='woocommerce-error']
+
+# Registration locators
 ${REGISTER_USERNAME}    //input[@id='reg_email']
 ${REGISTER_PASSWORD}    //input[@id='reg_password']
 ${REGISTER_BUTTON}      //input[@name='register']
+${REGISTER_FORM}        //*[@id="customer_login"]/div[2]/form/p[3]    #Used to click outside the password field to trigger validation
 ${EXISTING_REGISTER_ERROR}       //li[contains(text(),'An account is already registered with your email a')]
 
 # Shopping cart locators
