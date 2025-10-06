@@ -8,7 +8,7 @@ Resource    ../resources/locators/locators.resource
 
 *** Keywords ***
 Open New Browser
-    New Browser     chromium    headless=True
+    New Browser     chromium    headless=False
     New Page        ${URL}
     Click           ${LOGIN_CONSENT_NO}
 

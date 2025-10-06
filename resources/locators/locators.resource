@@ -52,6 +52,7 @@ ${ORDER_RECEIVED}        //p[@class='woocommerce-thankyou-order-received']
 
 # Shop locators
 ${FILTER_BUTTON}       //button[normalize-space()='Filter']
+${FILTER_PRICE}        (//div[@class='price_label'])[1]
 ${SORTING_DROPDOWN}    //select[@name='orderby']
 ${PRODUCT_GATEGORY_ANDROID}    //a[normalize-space()='Android']
 ${PRODUCT_GATEGORY_HTML}        //a[normalize-space()='HTML']
