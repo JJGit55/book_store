@@ -49,3 +49,11 @@ ${BILLING_POST_CODE}     //input[@id='billing_postcode']
 ${BILLING_PAYMENT_METHOD}    //ul[@class='wc_payment_methods payment_methods methods']
 ${PLACE_ORDER}           //input[@id='place_order']
 ${ORDER_RECEIVED}        //p[@class='woocommerce-thankyou-order-received']
+
+# Shop locators
+${FILTER_BUTTON}       //button[normalize-space()='Filter']
+${SORTING_DROPDOWN}    //select[@name='orderby']
+${PRODUCT_GATEGORY_ANDROID}    //a[normalize-space()='Android']
+${PRODUCT_GATEGORY_HTML}        //a[normalize-space()='HTML']
+${PRODUCT_GATEGORY_JAVA}    //a[normalize-space()='JavaScript']
+${PRODUCT_GATEGORY_SELENIUM}     //a[normalize-space()='selenium']
