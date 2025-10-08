@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../resources/keywords/register_keywords/register.resource
+Resource    ../resources/keywords/common_keywords.resource
 
 Test Setup       Open New Browser
 Test Teardown    Close Browser

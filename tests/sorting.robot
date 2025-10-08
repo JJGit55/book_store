@@ -1,7 +1,5 @@
 *** Settings ***
-Library    Browser
-
-Resource    ../resources/keywords/sorting_keywords/sorting.resource
+Resource    ../resources/keywords/common_keywords.resource
 
 Test Setup       Open New Browser
 Test Teardown    Close Browser

@@ -1,5 +1,6 @@
 *** Variables ***
-${URL}    https://practice.automationtesting.in/
-${USERNAME}    testaaja@test.com
-${PASSWORD}    Testaaja123*
+${URL}                 https://practice.automationtesting.in/
+${USERNAME}            testaaja@test.com
+${PASSWORD}            Testaaja123*
 ${SELENIUM_BROWSER}    firefox
+${DISCOUNT_CODE}       krishnasakinala

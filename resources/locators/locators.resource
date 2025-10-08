@@ -33,8 +33,9 @@ ${REGISTER_FORM}        //*[@id="customer_login"]/div[2]/form/p[3]    #Used to c
 ${EXISTING_REGISTER_ERROR}       //li[contains(text(),'An account is already registered with your email a')]
 
 # Shopping cart locators
-${APPLY_COUPON}      //input[@name='apply_coupon']
-${UPDATE_BASKET}     //input[@name='update_cart']
+${COUPON_CODE_FIELD}          //input[@id='coupon_code']
+${APPLY_COUPON_BUTTON}      //input[@name='apply_coupon']
+${UPDATE_BASKET_BUTTON}     //input[@name='update_cart']
 ${CHECKOUT}          //a[normalize-space()='Proceed to Checkout']
 
 #Billing details locators

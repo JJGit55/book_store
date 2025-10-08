@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../resources/keywords/filter_keywords/filter.resource
+Resource    ../resources/keywords/selenium.resource
 
 Test Setup       Open Selenium Browser
 Test Teardown    Close Browser
