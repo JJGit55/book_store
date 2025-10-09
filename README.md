@@ -7,6 +7,8 @@ Practice repository for test automation site
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+![Robot Framework](https://img.shields.io/badge/robot--framework-7.1-green)
+
 ![Tests](docs/test.png)
 Content of suite
 
