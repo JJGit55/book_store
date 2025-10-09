@@ -1,0 +1,38 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Register                                                                
+==============================================================================
+Register New User With Valid Credentials :: Tests to register a ne...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\JussiJokinen_k5ltbdd\book_store\tests\register.robot:9
+    T:  Register New User With Valid Credentials    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\JussiJokinen_k5ltbdd\book_store\tests\register.robot:11
+      Register New User Using Valid Credentials    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\JussiJokinen_k5ltbdd\book_store\resources\keywords\common_keywords.resource:67
+      Wait For Elements State    ${LOGOUT_BUTTON}
+      |  ${LOGOUT_BUTTON} = //a[normalize-space()='Logout'] (str)
+______________________________________________________________________________
+| FAIL |
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space()=\'Logout\']') to be visible
+------------------------------------------------------------------------------
+Register New User With Existing Credentials :: Tests to register a... | PASS |
+------------------------------------------------------------------------------
+Register New User With Empty Credentials :: Tests to register a ne... | PASS |
+------------------------------------------------------------------------------
+Register New User With Invalid Email :: Tests to register a new us... | PASS |
+------------------------------------------------------------------------------
+Register New User With Invalid Password :: Tests to register a new... | PASS |
+------------------------------------------------------------------------------
+Tests.Register                                                        | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Output:  C:\Users\JussiJokinen_k5ltbdd\book_store\pabot_results\4\output.xml

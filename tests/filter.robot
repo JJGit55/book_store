@@ -2,7 +2,7 @@
 
 Resource    ../resources/keywords/selenium.resource
 
-Test Setup       Open Selenium Browser
+Test Setup       Open Selenium Browser Headless
 Test Teardown    Close Browser
 
 

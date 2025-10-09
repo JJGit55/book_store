@@ -1,0 +1,22 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Login                                                                   
+==============================================================================
+Login Test with Valid Credentials :: Tests logging in with valid c... | PASS |
+------------------------------------------------------------------------------
+Login Test with Invalid Credentials :: Tests logging in with inval... | PASS |
+------------------------------------------------------------------------------
+Login Test with Empty Credentials :: Tests logging in with empty c... | PASS |
+------------------------------------------------------------------------------
+Login Test with Valid Username and Empty Password :: Tests logging... | PASS |
+------------------------------------------------------------------------------
+Login Test with Empty Username and Valid Password :: Tests logging... | PASS |
+------------------------------------------------------------------------------
+Tests.Login                                                           | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\JussiJokinen_k5ltbdd\book_store\results\pabot_results\3\output.xml

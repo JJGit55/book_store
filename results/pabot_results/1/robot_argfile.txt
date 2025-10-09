@@ -1,0 +1,16 @@
+--suite Tests.Discount Coupon
+--variable CALLER_ID:588391fdd52e4a7c9c30a002c81899f2
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:12
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Tests.Discount Coupon
+--outputdir results\pabot_results\1
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests

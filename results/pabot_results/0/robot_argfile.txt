@@ -1,0 +1,16 @@
+--suite Tests.Buy New Arrivals
+--variable CALLER_ID:56876884c9fe401aa8a4fb122094eaf0
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:12
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Tests.Buy New Arrivals
+--outputdir results\pabot_results\0
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests

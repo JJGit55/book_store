@@ -1,0 +1,283 @@
+{"level":30,"time":"2025-10-09T07:12:56.886Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Listening on 127.0.0.1:55578"}
+(node:31640) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-10-09T07:12:57.144Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:12:57.267Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-10-09T07:12:57.267Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-09T07:12:57.268Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:12:57.274Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-09T07:12:57.275Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@fc76b25afb88589c7c8dd305c46aead9\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=e47600b3-b0bf-4c23-ad26-acc11c2819db\"}"}
+{"level":30,"time":"2025-10-09T07:12:57.284Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Setting default timeout for context context=52a39afd-f468-45c9-93c7-6ed1c06fdad6 to 10000"}
+{"level":30,"time":"2025-10-09T07:12:57.284Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active context: context=52a39afd-f468-45c9-93c7-6ed1c06fdad6"}
+{"level":30,"time":"2025-10-09T07:12:57.483Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-09T07:12:57.483Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active page"}
+{"level":30,"time":"2025-10-09T07:13:01.343Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:01.348Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:01.349Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //button[@aria-label='Do not consent'] in page."}
+{"level":30,"time":"2025-10-09T07:13:01.558Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:01.574Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:01.574Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='My Account'] in page."}
+{"level":30,"time":"2025-10-09T07:13:02.362Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:02.366Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:02.366Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_email'] in page."}
+{"level":30,"time":"2025-10-09T07:13:02.628Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:02.631Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:02.631Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_password'] in page."}
+{"level":30,"time":"2025-10-09T07:13:02.851Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:03.858Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:03.858Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //*[@id=\"customer_login\"]/div[2]/form/p[3] in page."}
+{"level":30,"time":"2025-10-09T07:13:03.908Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:03.913Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:03.913Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:03.919Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:03.923Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:03.923Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:04.975Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:04.983Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:04.983Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='Logout'] in page."}
+{"level":30,"time":"2025-10-09T07:13:05.035Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:05.040Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-10-09T07:13:05.047Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Removed page=d9b54eab-d448-4b08-bef2-77998fc8e635 from context=52a39afd-f468-45c9-93c7-6ed1c06fdad6 page stack"}
+{"level":30,"time":"2025-10-09T07:13:05.128Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:05.133Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:05.134Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:05.137Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:05.137Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:05.140Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:05.212Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-10-09T07:13:05.212Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-09T07:13:05.212Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:05.215Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:05.215Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@261ea332b40c12385c65374ec72d533d\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=fa01e957-aee7-47fd-95b0-3448f56b0abe\"}"}
+{"level":30,"time":"2025-10-09T07:13:05.220Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Setting default timeout for context context=b4af7019-4cbf-463a-871e-ac7d3c29ed29 to 10000"}
+{"level":30,"time":"2025-10-09T07:13:05.220Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active context: context=b4af7019-4cbf-463a-871e-ac7d3c29ed29"}
+{"level":30,"time":"2025-10-09T07:13:05.299Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-09T07:13:05.299Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active page"}
+{"level":30,"time":"2025-10-09T07:13:08.476Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:08.481Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:08.481Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //button[@aria-label='Do not consent'] in page."}
+{"level":30,"time":"2025-10-09T07:13:08.614Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:08.618Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:08.619Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='My Account'] in page."}
+{"level":30,"time":"2025-10-09T07:13:09.242Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:09.245Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:09.245Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_email'] in page."}
+{"level":30,"time":"2025-10-09T07:13:09.498Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:09.501Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:09.501Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_password'] in page."}
+{"level":30,"time":"2025-10-09T07:13:09.586Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:10.593Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:10.593Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //*[@id=\"customer_login\"]/div[2]/form/p[3] in page."}
+{"level":30,"time":"2025-10-09T07:13:10.642Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:10.646Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:10.646Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:10.648Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:10.651Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:10.651Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:11.233Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:11.241Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:11.241Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'An account is already registered with your email a')] in page."}
+{"level":30,"time":"2025-10-09T07:13:11.321Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:11.326Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-10-09T07:13:11.329Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Removed page=4fa1cef3-8a90-4643-8c0b-1b31ff6865f2 from context=b4af7019-4cbf-463a-871e-ac7d3c29ed29 page stack"}
+{"level":30,"time":"2025-10-09T07:13:11.397Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:11.403Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:11.403Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:11.406Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:11.406Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:11.410Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:11.495Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-10-09T07:13:11.496Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-09T07:13:11.496Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:11.499Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:11.500Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4c6d038bbb9c732a32ec5de8fda08e78\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=d9b220eb-b84e-45f7-8d45-c71b4ee50b05\"}"}
+{"level":30,"time":"2025-10-09T07:13:11.504Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Setting default timeout for context context=7ea93b37-ebf5-44d1-a077-772c75cc54c8 to 10000"}
+{"level":30,"time":"2025-10-09T07:13:11.504Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active context: context=7ea93b37-ebf5-44d1-a077-772c75cc54c8"}
+{"level":30,"time":"2025-10-09T07:13:11.594Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-09T07:13:11.594Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active page"}
+{"level":30,"time":"2025-10-09T07:13:18.945Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:18.951Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:18.952Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //button[@aria-label='Do not consent'] in page."}
+{"level":30,"time":"2025-10-09T07:13:19.086Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:19.091Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:19.091Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='My Account'] in page."}
+{"level":30,"time":"2025-10-09T07:13:19.667Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:20.676Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:20.676Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_email'] in page."}
+{"level":30,"time":"2025-10-09T07:13:20.713Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:20.716Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:20.716Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_password'] in page."}
+{"level":30,"time":"2025-10-09T07:13:20.731Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:20.735Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:20.735Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //*[@id=\"customer_login\"]/div[2]/form/p[3] in page."}
+{"level":30,"time":"2025-10-09T07:13:20.776Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:20.783Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-10-09T07:13:20.783Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:20.823Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Retrieved dom property for element //input[@name='register'] containing true"}
+{"level":30,"time":"2025-10-09T07:13:20.823Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-10-09T07:13:20.826Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-10-09T07:13:20.829Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Removed page=3877e713-a60d-4431-85db-b5d769cfedbd from context=7ea93b37-ebf5-44d1-a077-772c75cc54c8 page stack"}
+{"level":30,"time":"2025-10-09T07:13:20.898Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:20.903Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:20.903Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:20.906Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:20.906Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:20.909Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:20.982Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-10-09T07:13:20.982Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-09T07:13:20.982Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:20.986Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:20.986Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@74d7e4d8e4db9d675a3fc0418b2dfd83\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=0a474ce9-63ba-491e-b11d-0739000e264b\"}"}
+{"level":30,"time":"2025-10-09T07:13:20.990Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Setting default timeout for context context=feb3fbc7-80a4-4ec4-a386-fa9adb9c6c0c to 10000"}
+{"level":30,"time":"2025-10-09T07:13:20.990Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active context: context=feb3fbc7-80a4-4ec4-a386-fa9adb9c6c0c"}
+{"level":30,"time":"2025-10-09T07:13:21.058Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-09T07:13:21.058Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active page"}
+{"level":30,"time":"2025-10-09T07:13:23.986Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:23.991Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:23.991Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //button[@aria-label='Do not consent'] in page."}
+{"level":30,"time":"2025-10-09T07:13:24.112Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:24.119Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:24.119Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='My Account'] in page."}
+{"level":30,"time":"2025-10-09T07:13:24.648Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:24.652Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:24.652Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_email'] in page."}
+{"level":30,"time":"2025-10-09T07:13:24.918Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:24.921Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:24.921Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_password'] in page."}
+{"level":30,"time":"2025-10-09T07:13:24.942Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:25.948Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:25.948Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //*[@id=\"customer_login\"]/div[2]/form/p[3] in page."}
+{"level":30,"time":"2025-10-09T07:13:26.002Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:26.005Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:26.005Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:26.010Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-10-09T07:13:26.013Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:26.013Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:26.061Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:26.064Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2025-10-09T07:13:26.064Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is disabled, return Locator: //a[normalize-space()='Logout'] in page."}
+{"level":30,"time":"2025-10-09T07:13:26.066Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-10-09T07:13:26.071Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-10-09T07:13:26.075Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Removed page=6e29bb01-006e-4e59-9386-80659ecbdb3d from context=feb3fbc7-80a4-4ec4-a386-fa9adb9c6c0c page stack"}
+{"level":30,"time":"2025-10-09T07:13:26.122Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:26.125Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:26.125Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:26.127Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:26.127Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:26.130Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:26.196Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding browser to stack: chromium, version: 140.0.7339.186"}
+{"level":30,"time":"2025-10-09T07:13:26.196Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-09T07:13:26.196Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-09T07:13:26.201Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:26.201Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@284eadd08bef12457b7a8b833b0baadd\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=c81d76cd-9bf8-4cc6-9242-117159828d5d\"}"}
+{"level":30,"time":"2025-10-09T07:13:26.204Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Setting default timeout for context context=157098db-57df-42db-bc60-55339b0fe059 to 10000"}
+{"level":30,"time":"2025-10-09T07:13:26.204Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active context: context=157098db-57df-42db-bc60-55339b0fe059"}
+{"level":30,"time":"2025-10-09T07:13:26.268Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-09T07:13:26.268Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Changed active page"}
+{"level":30,"time":"2025-10-09T07:13:29.488Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-09T07:13:29.491Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:29.492Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //button[@aria-label='Do not consent'] in page."}
+{"level":30,"time":"2025-10-09T07:13:29.606Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:29.611Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:29.611Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='My Account'] in page."}
+{"level":30,"time":"2025-10-09T07:13:30.178Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:30.181Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:30.182Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_email'] in page."}
+{"level":30,"time":"2025-10-09T07:13:30.435Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:30.438Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:30.438Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@id='reg_password'] in page."}
+{"level":30,"time":"2025-10-09T07:13:30.449Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method typeText"}
+{"level":30,"time":"2025-10-09T07:13:31.455Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method click"}
+{"level":30,"time":"2025-10-09T07:13:31.455Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //*[@id=\"customer_login\"]/div[2]/form/p[3] in page."}
+{"level":30,"time":"2025-10-09T07:13:31.506Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method click"}
+{"level":30,"time":"2025-10-09T07:13:31.509Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-10-09T07:13:31.509Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Strict mode is enabled, find Locator with //input[@name='register'] in page."}
+{"level":30,"time":"2025-10-09T07:13:31.521Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Retrieved dom property for element //input[@name='register'] containing true"}
+{"level":30,"time":"2025-10-09T07:13:31.521Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-10-09T07:13:31.525Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-10-09T07:13:31.530Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Removed page=07ae5fc6-17c3-44a7-a54b-bf6e690321c2 from context=157098db-57df-42db-bc60-55339b0fe059 page stack"}
+{"level":30,"time":"2025-10-09T07:13:31.575Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:31.578Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:31.578Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:12419:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13368:59)
+    at PlaywrightServer.setTimeout (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js:13617:57)
+    at Object.onReceiveHalfClose (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-10-09T07:13:31.581Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:31.581Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-09T07:13:31.584Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-10-09T07:13:31.584Z","pid":31640,"hostname":"AWA5CD2297ZJ8","msg":"End of node method closeAllBrowsers"}

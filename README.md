@@ -1,13 +1,19 @@
-# book_store
+## Book Store
 Practice repository for test automation site
 
-![CI](https://github.com/USER/REPO/actions/workflows/robot.yml/badge.svg)
+![Logo](docs/logo_test.png)
 
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+![Tests](docs/test.png)
+Content of suite
+
+View latest report: https://github.com/JJGit55/book_store/blob/main/results/log.html
 
 
-# How to run content in this reposatory
+## How to run content in this reposatory
 Create virtual enviroment with
 
 ````

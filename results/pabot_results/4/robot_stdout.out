@@ -1,0 +1,22 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Register                                                                
+==============================================================================
+Register New User With Valid Credentials :: Tests to register a ne... | PASS |
+------------------------------------------------------------------------------
+Register New User With Existing Credentials :: Tests to register a... | PASS |
+------------------------------------------------------------------------------
+Register New User With Empty Credentials :: Tests to register a ne... | PASS |
+------------------------------------------------------------------------------
+Register New User With Invalid Email :: Tests to register a new us... | PASS |
+------------------------------------------------------------------------------
+Register New User With Invalid Password :: Tests to register a new... | PASS |
+------------------------------------------------------------------------------
+Tests.Register                                                        | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\JussiJokinen_k5ltbdd\book_store\results\pabot_results\4\output.xml

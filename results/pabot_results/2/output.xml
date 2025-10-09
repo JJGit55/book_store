@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-09T10:12:55.480965" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests">
+<suite id="s1-s1" name="Filter" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\filter.robot">
+<test id="s1-s1-t1" name="Set Price Filter Range From 150 To 250" line="10">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:12:55.737476" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-09T10:12:55.737154" elapsed="6.951087"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:12:55.736452" elapsed="6.952051"/>
+</kw>
+<kw name="Set Range From 150 To 250" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:02.689548" elapsed="0.111933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:02.802412" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:02.801791" elapsed="0.508338"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:03.310761" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:03.310364" elapsed="1.119053"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:04.454149" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2e0ce7d1fa12d5130932ecee0a6d2acc", element="f.FF59E36611AB2B3B4734AD9BFDA6963D.d.03CD3465CA15488D124EAA3D54670432.e.405")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:04.429655" elapsed="0.024568"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:04.465967" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2e0ce7d1fa12d5130932ecee0a6d2acc", element="f.FF59E36611AB2B3B4734AD9BFDA6963D.d.03CD3465CA15488D124EAA3D54670432.e.406")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:04.454444" elapsed="0.011586"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:04.466200" elapsed="0.580601"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>-143</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:05.047063" elapsed="0.567984"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:05.615921" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:05.615379" elapsed="0.077587"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:05.693126" elapsed="0.013682"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:06.768707" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹150 — ₹250'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹150 — ₹250</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-09T10:13:05.706974" elapsed="1.061883"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:13:02.688844" elapsed="4.080191"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-09T10:13:06.769377" elapsed="2.186729"/>
+</kw>
+<doc>Tests to set price filter range from 150 to 250</doc>
+<status status="PASS" start="2025-10-09T10:12:55.735831" elapsed="13.220375"/>
+</test>
+<test id="s1-s1-t2" name="Set Price Filter Range From 251 To 350" line="14">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:08.961470" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-09T10:13:08.961202" elapsed="4.690920"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:13:08.960781" elapsed="4.691447"/>
+</kw>
+<kw name="Set Range From 251 To 350" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:13.652747" elapsed="0.030015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:13.683434" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:13.683000" elapsed="0.248891"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:13.932539" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:13.932112" elapsed="1.388069"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:15.353055" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ee7dfce37a5b7cfd651f98a35f020fc4", element="f.03E266CCEBEB32B1CC8A76593DF41F4E.d.12CC16A3DBCE1760460639AD9404BD22.e.402")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:15.320471" elapsed="0.032668"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:15.367910" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ee7dfce37a5b7cfd651f98a35f020fc4", element="f.03E266CCEBEB32B1CC8A76593DF41F4E.d.12CC16A3DBCE1760460639AD9404BD22.e.403")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:15.353458" elapsed="0.014540"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>58</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:15.368301" elapsed="0.546396"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>-86</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:15.915085" elapsed="0.557022"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:16.472582" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:16.472269" elapsed="0.047074"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:16.519508" elapsed="0.743056"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:17.278118" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹251 — ₹350'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹251 — ₹350</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-09T10:13:17.262715" elapsed="0.015493"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:13:13.652399" elapsed="3.625895"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-09T10:13:17.278478" elapsed="2.072924"/>
+</kw>
+<doc>Tests to set price filter range from 251 to 350</doc>
+<status status="PASS" start="2025-10-09T10:13:08.956545" elapsed="10.394999"/>
+</test>
+<test id="s1-s1-t3" name="Set Price Filter Range From 351 To 500" line="18">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:19.354841" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-09T10:13:19.353803" elapsed="4.141742"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:13:19.352832" elapsed="4.142844"/>
+</kw>
+<kw name="Set Range From 351 To 500" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:23.496323" elapsed="0.018974"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:23.515766" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:23.515459" elapsed="0.115740"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:23.631844" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:23.631443" elapsed="1.065016"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:24.721417" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="d0a2fabcfaa692b68088be6ab6c44c8f", element="f.A6080B7C7052C7065B867441182BDA5D.d.BB9470B990B53D9CE6C1E2EBF963D622.e.395")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:24.696729" elapsed="0.024771"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:24.731883" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="d0a2fabcfaa692b68088be6ab6c44c8f", element="f.A6080B7C7052C7065B867441182BDA5D.d.BB9470B990B53D9CE6C1E2EBF963D622.e.396")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:24.721757" elapsed="0.010171"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>115</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:24.732085" elapsed="0.569462"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-09T10:13:25.301706" elapsed="0.539615"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:25.841951" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-09T10:13:25.841542" elapsed="0.841560"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-09T10:13:26.683255" elapsed="0.023109"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-09T10:13:26.724199" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹351 — ₹500'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹351 — ₹500</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-09T10:13:26.706525" elapsed="0.017763"/>
+</kw>
+<status status="PASS" start="2025-10-09T10:13:23.495948" elapsed="3.228424"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-09T10:13:26.724545" elapsed="2.139242"/>
+</kw>
+<doc>Tests to set price filter range from 351 to 500</doc>
+<status status="PASS" start="2025-10-09T10:13:19.352243" elapsed="9.511740"/>
+</test>
+<status status="PASS" start="2025-10-09T10:12:55.522212" elapsed="33.342606"/>
+</suite>
+<status status="PASS" start="2025-10-09T10:12:55.505551" elapsed="33.360094"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
+<stat name="Filter" id="s1-s1" pass="3" fail="0" skip="0">Tests.Filter</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

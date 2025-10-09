@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Collections
 
 Resource    ../resources/variables/common_variables.resource
 Resource    ../resources/locators/locators.resource
@@ -10,7 +11,11 @@ Open Selenium Browser
     Open Browser    ${URL}    ${SELENIUM_BROWSER}
     Maximize Browser Window
 
+Open Selenium Browser Headless
+    Open Browser    ${URL}    headlesschrome    options=add_argument("--window-size=1920,1080")
+
 Set Range From 150 To 250
+    Wait Until Element Is Visible    ${LOGIN_CONSENT_NO}    3s
     Click Element    ${LOGIN_CONSENT_NO}
     Click Element    ${SHOP}
     ${left_handle}=     Get WebElement    css=.price_slider span:nth-child(2)
@@ -22,6 +27,7 @@ Set Range From 150 To 250
     Element Should Contain           ${FILTER_PRICE}    Price: ₹150 — ₹250
 
 Set Range From 251 To 350
+    Wait Until Element Is Visible    ${LOGIN_CONSENT_NO}    3s
     Click Element    ${LOGIN_CONSENT_NO}
     Click Element    ${SHOP}
     ${left_handle}=     Get WebElement    css=.price_slider span:nth-child(2)
@@ -33,6 +39,7 @@ Set Range From 251 To 350
     Element Should Contain           ${FILTER_PRICE}    Price: ₹251 — ₹350
 
 Set Range From 351 To 500
+    Wait Until Element Is Visible    ${LOGIN_CONSENT_NO}    3s
     Click Element    ${LOGIN_CONSENT_NO}
     Click Element    ${SHOP}
     ${left_handle}=     Get WebElement    css=.price_slider span:nth-child(2)
