@@ -9,7 +9,7 @@ Resource    ../resources/locators/locators.resource
 *** Keywords ***
 Open New Browser
     [Documentation]    Opens a new browser and navigates to the base URL
-    New Browser     chromium    headless=True
+    New Browser     chromium    headless=False
     New Page        ${URL}
     Click           ${LOGIN_CONSENT_NO}
 
@@ -183,4 +183,12 @@ Filter Products With Selenium Category
     Click    ${PRODUCT_GATEGORY_SELENIUM}
     ${current_url}=    Get Url
     Should Contain    ${current_url}    product-category/selenium/
+
+Search For Book
+    [Documentation]   Searches for a given book by name
+    [Arguments]    ${book_name}
+    Click          ${SHOP}
+    Type Text      ${SEARCH_BAR}    ${book_name}
+    Press Keys     ${SEARCH_BAR}    Enter
+    Click    //h2[@class="post-title entry-title"]/a[normalize-space(text())="${book_name}"]
 
