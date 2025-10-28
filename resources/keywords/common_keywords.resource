@@ -116,7 +116,6 @@ Register User With Invalid Password
 
 Sort Products From Low To High
     [Documentation]   Sorts products from low to high based on price
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by price: low to high
     ${selected_text}=    Get Text    select.orderby >> option:checked
@@ -124,7 +123,6 @@ Sort Products From Low To High
 
 Sort Products From High To Low
     [Documentation]   Sorts products from high to low based on price
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by price: high to low
     ${selected_text}=    Get Text    select.orderby >> option:checked
@@ -132,7 +130,6 @@ Sort Products From High To Low
 
 Sort Products By Rating
     [Documentation]   Sorts products by average rating
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by average rating
     ${selected_text}=    Get Text    select.orderby >> option:checked
@@ -154,7 +151,6 @@ Add Discount Coupon And Verify Discount
 
 Filter Products With Android Category
     [Documentation]    Filters products with Android category
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click    ${SHOP}
     Click    ${PRODUCT_GATEGORY_ANDROID}
     ${current_url}=    Get Url
@@ -162,7 +158,6 @@ Filter Products With Android Category
 
 Filter Products With HTML Category
     [Documentation]    Filters products with HTML category
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click    ${SHOP}
     Click    ${PRODUCT_GATEGORY_HTML}
     ${current_url}=    Get Url
@@ -170,7 +165,6 @@ Filter Products With HTML Category
 
 Filter Products With Java Category
     [Documentation]    Filters products with Java category
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click    ${SHOP}
     Click    ${PRODUCT_GATEGORY_JAVA}
     ${current_url}=    Get Url
@@ -178,7 +172,6 @@ Filter Products With Java Category
 
 Filter Products With Selenium Category
     [Documentation]    Filters products with Selenium category
-    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click    ${SHOP}
     Click    ${PRODUCT_GATEGORY_SELENIUM}
     ${current_url}=    Get Url

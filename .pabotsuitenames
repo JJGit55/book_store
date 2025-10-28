@@ -1,10 +1,12 @@
-datasources:0aac54ecc26d640d19d028aec88718b49624c4db
+datasources:e9491bacfff19e329c396d4c573e6b8f51ac9083
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:a97fe4ea313fc02b7c4c83a4651c37b33164d8c1
+file:a11ca66843bc251c4ad7b32e583e3f793cf2c202
 --suite Tests.Buy New Arrivals
+--suite Tests.Categories
 --suite Tests.Discount Coupon
 --suite Tests.Filter
 --suite Tests.Login
 --suite Tests.Register
+--suite Tests.Search And Buy
 --suite Tests.Sorting

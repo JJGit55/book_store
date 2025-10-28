@@ -1,0 +1,3071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.3.2 (Python 3.14.0 on win32)" generated="2025-10-28T10:44:34.853353" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests">
+<suite id="s1-s1" name="Buy New Arrivals" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\buy_new_arrivals.robot">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:33.191798" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\0\\browser\\traces\\temp\\0c0cdc88-6a76-4f7d-9abb-441e3decc48c"}</msg>
+<msg time="2025-10-28T10:43:33.215005" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60849</msg>
+<msg time="2025-10-28T10:43:34.575759" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\0\\browser\\traces\\temp\\0c0cdc88-6a76-4f7d-9abb-441e3decc48c"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:33.191134" elapsed="1.384899"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:37.839456" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:37.839592" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:34.576391" elapsed="3.263451"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:37.841879" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:37.840227" elapsed="0.462947"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:33.190551" elapsed="5.113073"/>
+</kw>
+<test id="s1-s1-t1" name="Buy All New Arrivals" line="9">
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:38.368631" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.367496" elapsed="0.563457"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:38.932676" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.931293" elapsed="0.362545"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:39.295180" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.294160" elapsed="0.167621"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:39.463031" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.462081" elapsed="0.841468"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:40.370395" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.303965" elapsed="0.066890"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:43:38.366582" elapsed="2.004560"/>
+</kw>
+<kw name="Add All New Arrivals to Cart" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:40.373415" level="INFO">Clicks the element '//img[@title='Automation Practice Site']'.</msg>
+<arg>${FRONT_PAGE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.372447" elapsed="0.564718"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-10-28T10:43:41.017915" level="INFO">Found locator('text=Add to basket').first(),locator('text=Add to basket').nth(1),locator('text=Add to basket').nth(2) Locators successfully.</msg>
+<msg time="2025-10-28T10:43:41.018312" level="INFO">${buttons} = ['text=Add to basket &gt;&gt; nth=0', 'text=Add to basket &gt;&gt; nth=1', 'text=Add to basket &gt;&gt; nth=2']</msg>
+<var>${buttons}</var>
+<arg>text=Add to basket</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.937423" elapsed="0.080983"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.021179" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=0'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.020106" elapsed="0.078831"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-10-28T10:43:41.019586" elapsed="0.079709"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.101316" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=1'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.100152" elapsed="0.227862"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=1</var>
+<status status="PASS" start="2025-10-28T10:43:41.099663" elapsed="0.228503"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.330159" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=2'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.328973" elapsed="0.231895"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=2</var>
+<status status="PASS" start="2025-10-28T10:43:41.328423" elapsed="0.232573"/>
+</iter>
+<var>${btn}</var>
+<value>@{buttons}</value>
+<status status="PASS" start="2025-10-28T10:43:41.018702" elapsed="0.542370"/>
+</for>
+<doc>Adds all new arrivals from the front page to the shopping cart</doc>
+<status status="PASS" start="2025-10-28T10:43:40.371755" elapsed="1.189457"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.562405" level="INFO">Clicks the element '//a[@title='View your shopping cart']'.</msg>
+<arg>${SHOPPING_CART}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.561448" elapsed="0.826567"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:42.389019" level="INFO">Clicks the element '//a[normalize-space()='Proceed to Checkout']'.</msg>
+<arg>${CHECKOUT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:42.388261" elapsed="0.518192"/>
+</kw>
+<kw name="Add Billing Details" owner="common_keywords">
+<kw name="Get Billing Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:43:42.922058" level="INFO">&amp;{billing_data} = { first_name=Johanna | last_name=Laine | phone_number=044 623 7429 | country=Finland | street_address=Kuovitie 22 | city=Jyväskylä | post_code=71694 | payment_method=Check Payments }</msg>
+<var>&amp;{billing_data}</var>
+<doc>Returns random billing data</doc>
+<status status="PASS" start="2025-10-28T10:43:42.908551" elapsed="0.013655"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:42.927179" level="INFO">Types the text 'Johanna' in the given field.</msg>
+<arg>${BILLING_FIRST_NAME}</arg>
+<arg>${billing_data['first_name']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:42.922824" elapsed="0.167558"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.093168" level="INFO">Types the text 'Laine' in the given field.</msg>
+<arg>${BILLING_LAST_NAME}</arg>
+<arg>${billing_data['last_name']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.090753" elapsed="0.035790"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.128671" level="INFO">Types the text '044 623 7429' in the given field.</msg>
+<arg>${BILLING_PHONE}</arg>
+<arg>${billing_data['phone_number']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.126938" elapsed="0.132806"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.261016" level="INFO">Clicks the element '//*[@id="select2-chosen-1"]'.</msg>
+<arg>${BILLING_COUNTRY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.259996" elapsed="0.151582"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.413238" level="INFO">Types the text 'Finland' in the given field.</msg>
+<arg>${BILLING_COUNTRY_SEARCH}</arg>
+<arg>${billing_data['country']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.411843" elapsed="0.094611"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>${BILLING_COUNTRY_SEARCH}</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.507101" elapsed="0.073964"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.583034" level="INFO">Types the text 'Kuovitie 22' in the given field.</msg>
+<arg>${BILLING_STREET_ADDRESS}</arg>
+<arg>${billing_data['street_address']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.581340" elapsed="0.157668"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.740568" level="INFO">Types the text 'Jyväskylä' in the given field.</msg>
+<arg>${BILLING_CITY}</arg>
+<arg>${billing_data['city']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.739354" elapsed="0.070914"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:43.812604" level="INFO">Types the text '71694' in the given field.</msg>
+<arg>${BILLING_POST_CODE}</arg>
+<arg>${billing_data['post_code']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.810606" elapsed="0.115517"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.928201" level="INFO">Clicks the element 'css=div#payment &gt;&gt; text=Check Payments'.</msg>
+<arg>css=div#payment &gt;&gt; text=${billing_data['payment_method']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.926439" elapsed="0.121588"/>
+</kw>
+<doc>Adds billing details on the checkout page from test data</doc>
+<status status="PASS" start="2025-10-28T10:43:42.907361" elapsed="1.141175"/>
+</kw>
+<kw name="Place Order And Verify Order Received" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:44.051954" level="INFO">Clicks the element '//input[@id='place_order']'.</msg>
+<arg>${PLACE_ORDER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:44.050012" elapsed="1.663288"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:47.324120" level="INFO">Waited for Element with selector //p[@class='woocommerce-thankyou-order-received'] at state visible</msg>
+<arg>${ORDER_RECEIVED}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:45.713838" elapsed="1.610493"/>
+</kw>
+<doc>Places the order and verifies that the order was received</doc>
+<status status="PASS" start="2025-10-28T10:43:44.049016" elapsed="3.275485"/>
+</kw>
+<doc>Tests to buy all new arrivals from the shop</doc>
+<status status="PASS" start="2025-10-28T10:43:38.303816" elapsed="9.020892"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:43:47.846446" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.347153" elapsed="0.499948"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:32.571000" elapsed="14.634000"/>
+</suite>
+<suite id="s1-s2" name="Categories" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\categories.robot">
+<test id="s1-s2-t1" name="Sort Shop Items Based On Android Category" line="9">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:33.196194" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\04ee7221-aa73-4846-97f9-dac1aacbc2fa"}</msg>
+<msg time="2025-10-28T10:43:33.215487" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60850</msg>
+<msg time="2025-10-28T10:43:34.597363" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\04ee7221-aa73-4846-97f9-dac1aacbc2fa"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:33.195510" elapsed="1.402090"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:38.624472" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:38.624634" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:34.598004" elapsed="4.027041"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:38.626526" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.625469" elapsed="0.252235"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:33.194881" elapsed="5.683340"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:38.880658" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.879489" elapsed="0.526217"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:39.407115" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.406024" elapsed="0.268854"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:39.676071" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.675214" elapsed="0.076032"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:39.753178" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.751645" elapsed="0.879664"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:40.693186" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.631577" elapsed="0.061826"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:43:38.878636" elapsed="1.814984"/>
+</kw>
+<kw name="Filter Products With Android Category" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:40.695264" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.694545" elapsed="0.520736"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.216769" level="INFO">Clicks the element '//a[normalize-space()='Android']'.</msg>
+<arg>${PRODUCT_GATEGORY_ANDROID}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.215586" elapsed="0.765495"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-28T10:43:41.986064" level="INFO">${current_url} = https://practice.automationtesting.in/product-category/android/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.981377" elapsed="0.004774"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>product-category/android/</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.986440" elapsed="0.000777"/>
+</kw>
+<doc>Filters products with Android category</doc>
+<status status="PASS" start="2025-10-28T10:43:40.693911" elapsed="1.293527"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:43:42.357220" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.987833" elapsed="0.369601"/>
+</kw>
+<doc>Sorts shop items based on Android category</doc>
+<status status="PASS" start="2025-10-28T10:43:33.194170" elapsed="9.163404"/>
+</test>
+<test id="s1-s2-t2" name="Sort Shop Items Based On HTML Category" line="14">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:42.373299" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\2426ae4f-daeb-4036-8d20-aecf9f12588b"}</msg>
+<msg time="2025-10-28T10:43:42.662208" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\2426ae4f-daeb-4036-8d20-aecf9f12588b"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:42.371872" elapsed="0.290550"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:45.795043" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:45.795153" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:42.662741" elapsed="3.132576"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:45.796296" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:45.795535" elapsed="0.182673"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:42.370785" elapsed="3.607606"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:45.980300" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:45.979360" elapsed="0.475702"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.456260" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.455480" elapsed="0.364665"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.821302" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.820446" elapsed="0.124468"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:46.946092" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.945203" elapsed="0.797901"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:47.879165" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.743466" elapsed="0.135895"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:43:45.978679" elapsed="1.900850"/>
+</kw>
+<kw name="Filter Products With HTML Category" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:47.882005" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.880886" elapsed="0.521607"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:48.404572" level="INFO">Clicks the element '//a[normalize-space()='HTML']'.</msg>
+<arg>${PRODUCT_GATEGORY_HTML}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:48.403272" elapsed="0.813346"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-28T10:43:49.220925" level="INFO">${current_url} = https://practice.automationtesting.in/product-category/html/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-28T10:43:49.216975" elapsed="0.004036"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>product-category/html/</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-10-28T10:43:49.221311" elapsed="0.000598"/>
+</kw>
+<doc>Filters products with HTML category</doc>
+<status status="PASS" start="2025-10-28T10:43:47.879812" elapsed="1.342267"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:43:49.956961" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:49.222473" elapsed="0.734764"/>
+</kw>
+<doc>Sorts shop items based on HTML category</doc>
+<status status="PASS" start="2025-10-28T10:43:42.365692" elapsed="7.591732"/>
+</test>
+<test id="s1-s2-t3" name="Sort Shop Items Based On JavaScript Category" line="19">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:49.970785" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\d8e65e4e-4866-4de1-b295-60af7a285067"}</msg>
+<msg time="2025-10-28T10:43:50.290854" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\d8e65e4e-4866-4de1-b295-60af7a285067"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:49.969486" elapsed="0.321623"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:53.916735" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:53.916862" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:50.291472" elapsed="3.625560"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:53.918208" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:53.917306" elapsed="0.208467"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:49.968680" elapsed="4.157335"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:54.128312" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:54.127190" elapsed="0.603627"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:54.732696" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:54.731252" elapsed="0.228421"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:54.960663" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:54.959939" elapsed="0.166253"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:55.127093" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:55.126398" elapsed="0.824380"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:56.058266" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:55.951354" elapsed="0.107199"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:43:54.126353" elapsed="1.932446"/>
+</kw>
+<kw name="Filter Products With Java Category" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:56.061345" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:56.059976" elapsed="0.577595"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:56.639863" level="INFO">Clicks the element '//a[normalize-space()='JavaScript']'.</msg>
+<arg>${PRODUCT_GATEGORY_JAVA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:56.637950" elapsed="0.942373"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-28T10:43:57.586564" level="INFO">${current_url} = https://practice.automationtesting.in/product-category/javascript/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.580772" elapsed="0.005872"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>product-category/javascript/</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.586941" elapsed="0.000545"/>
+</kw>
+<doc>Filters products with Java category</doc>
+<status status="PASS" start="2025-10-28T10:43:56.059189" elapsed="1.528574"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:43:58.428139" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.588148" elapsed="0.840504"/>
+</kw>
+<doc>Sorts shop items based on JavaScript category</doc>
+<status status="PASS" start="2025-10-28T10:43:49.964917" elapsed="8.464007"/>
+</test>
+<test id="s1-s2-t4" name="Sort Products Based On Selenium Category" line="24">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:58.465537" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\88e3ba1a-0a03-4c40-8b85-0d543b642b07"}</msg>
+<msg time="2025-10-28T10:43:58.808992" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\1\\browser\\traces\\temp\\88e3ba1a-0a03-4c40-8b85-0d543b642b07"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:58.463580" elapsed="0.345778"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:02.871872" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:02.872074" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:58.810235" elapsed="4.062094"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:02.873655" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:02.872658" elapsed="0.279941"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:58.460989" elapsed="4.691769"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:03.154510" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:03.153590" elapsed="0.538777"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:03.694926" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:03.692907" elapsed="0.264157"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:03.958725" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:03.957320" elapsed="0.251863"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:04.210818" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.209465" elapsed="0.781504"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:05.094375" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.991334" elapsed="0.103348"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:44:03.153001" elapsed="1.941892"/>
+</kw>
+<kw name="Filter Products With Selenium Category" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:05.096602" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.095772" elapsed="0.535846"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:05.633386" level="INFO">Clicks the element '//a[normalize-space()='selenium']'.</msg>
+<arg>${PRODUCT_GATEGORY_SELENIUM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.632005" elapsed="1.027714"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-28T10:44:06.665579" level="INFO">${current_url} = https://practice.automationtesting.in/product-category/selenium/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.660175" elapsed="0.005523"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>product-category/selenium/</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.666174" elapsed="0.000675"/>
+</kw>
+<doc>Filters products with Selenium category</doc>
+<status status="PASS" start="2025-10-28T10:44:05.095146" elapsed="1.571840"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:07.618036" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.667263" elapsed="0.951007"/>
+</kw>
+<doc>Sorts products based on Selenium category</doc>
+<status status="PASS" start="2025-10-28T10:43:58.456715" elapsed="9.161709"/>
+</test>
+<status status="PASS" start="2025-10-28T10:43:32.568603" elapsed="35.055191"/>
+</suite>
+<suite id="s1-s3" name="Discount Coupon" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\discount_coupon.robot">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:33.198841" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\2\\browser\\traces\\temp\\8f49cb05-862f-4b38-9e9f-5b131b8307d4"}</msg>
+<msg time="2025-10-28T10:43:33.222984" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60851</msg>
+<msg time="2025-10-28T10:43:34.520555" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\2\\browser\\traces\\temp\\8f49cb05-862f-4b38-9e9f-5b131b8307d4"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:33.198135" elapsed="1.322673"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:37.261432" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:37.261563" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:34.521137" elapsed="2.740679"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:37.263216" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:37.262164" elapsed="0.265146"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:33.197521" elapsed="4.330021"/>
+</kw>
+<test id="s1-s3-t1" name="Use Discount Coupon During Purchase" line="9">
+<kw name="Register New User Using Valid Credentials" owner="common_keywords">
+<kw name="Get Register Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:43:37.552889" level="INFO">&amp;{register_data} = { email=lauri54@testmail.com | password=Qx1!D7jPmV6 }</msg>
+<var>&amp;{register_data}</var>
+<doc>Returns random register data</doc>
+<status status="PASS" start="2025-10-28T10:43:37.544918" elapsed="0.008168"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:37.555087" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:37.553708" elapsed="0.777479"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:38.333406" level="INFO">Types the text 'lauri54@testmail.com' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>${register_data['email']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.331490" elapsed="0.606082"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:38.939714" level="INFO">Types the text 'Qx1!D7jPmV6' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${register_data['password']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.937892" elapsed="0.196470"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:43:40.136350" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.134832" elapsed="1.001747"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:40.138068" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.136893" elapsed="0.055067"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:40.198920" level="INFO">Waited for Element with selector //input[@name='register'] at state visible</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.192209" elapsed="0.006991"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:40.200773" level="INFO">Clicks the element '//input[@name='register']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.199427" elapsed="0.988777"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:41.289929" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.188519" elapsed="0.101757"/>
+</kw>
+<doc>Registers a new user using valid credentials</doc>
+<status status="PASS" start="2025-10-28T10:43:37.544158" elapsed="3.746406"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.292067" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.290940" elapsed="0.550054"/>
+</kw>
+<kw name="Filter Products With Java Category" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:41.842748" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.841910" elapsed="0.862942"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:42.706863" level="INFO">Clicks the element '//a[normalize-space()='JavaScript']'.</msg>
+<arg>${PRODUCT_GATEGORY_JAVA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:42.705185" elapsed="0.758628"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-28T10:43:43.468590" level="INFO">${current_url} = https://practice.automationtesting.in/product-category/javascript/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.464076" elapsed="0.004597"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>product-category/javascript/</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.468923" elapsed="0.000956"/>
+</kw>
+<doc>Filters products with Java category</doc>
+<status status="PASS" start="2025-10-28T10:43:41.841327" elapsed="1.628802"/>
+</kw>
+<kw name="Add Products To Basket" owner="common_keywords">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-10-28T10:43:43.551994" level="INFO">Found locator('text=Add to basket').first(),locator('text=Add to basket').nth(1),locator('text=Add to basket').nth(2) Locators successfully.</msg>
+<msg time="2025-10-28T10:43:43.552509" level="INFO">${buttons} = ['text=Add to basket &gt;&gt; nth=0', 'text=Add to basket &gt;&gt; nth=1', 'text=Add to basket &gt;&gt; nth=2']</msg>
+<var>${buttons}</var>
+<arg>text=Add to basket</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.471199" elapsed="0.081364"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.555726" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=0'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.554632" elapsed="0.058944"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-10-28T10:43:43.553806" elapsed="0.059919"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.615086" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=1'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.614323" elapsed="0.137270"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=1</var>
+<status status="PASS" start="2025-10-28T10:43:43.613943" elapsed="0.137808"/>
+</iter>
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.753814" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=2'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.752706" elapsed="0.204537"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=2</var>
+<status status="PASS" start="2025-10-28T10:43:43.752073" elapsed="0.205358"/>
+</iter>
+<var>${btn}</var>
+<value>@{buttons}</value>
+<status status="PASS" start="2025-10-28T10:43:43.552738" elapsed="0.404841"/>
+</for>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:43.959203" level="INFO">Clicks the element '//a[@title='View your shopping cart']'.</msg>
+<arg>${SHOPPING_CART}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.957987" elapsed="0.683154"/>
+</kw>
+<doc>Adds all products to the shopping basket</doc>
+<status status="PASS" start="2025-10-28T10:43:43.470450" elapsed="1.170896"/>
+</kw>
+<kw name="Add Discount Coupon And Verify Discount" owner="common_keywords">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:44.643271" level="INFO">Types the text 'krishnasakinala' in the given field.</msg>
+<arg>${COUPON_CODE_FIELD}</arg>
+<arg>${DISCOUNT_CODE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:44.642254" elapsed="0.101863"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:44.745204" level="INFO">Clicks the element '//input[@name='apply_coupon']'.</msg>
+<arg>${APPLY_COUPON_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:44.744381" elapsed="0.126996"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:45.727143" level="INFO">Waited for Element with selector //div[@class='woocommerce-message'] at state visible</msg>
+<arg>//div[@class='woocommerce-message']</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:44.871618" elapsed="0.855830"/>
+</kw>
+<doc>Adds a discount coupon during purchase and verifies the discount is applied</doc>
+<status status="PASS" start="2025-10-28T10:43:44.641624" elapsed="1.086003"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:45.729024" level="INFO">Clicks the element '//a[normalize-space()='Proceed to Checkout']'.</msg>
+<arg>${CHECKOUT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:45.727842" elapsed="0.510561"/>
+</kw>
+<kw name="Add Billing Details" owner="common_keywords">
+<kw name="Get Billing Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:43:46.244463" level="INFO">&amp;{billing_data} = { first_name=Elsa | last_name=Johansson | phone_number=070-692 2438 | country=Sweden | street_address=Nilssons gata 66 | city=Umeå | post_code=45971 | payment_method=Cash on Delivery }</msg>
+<var>&amp;{billing_data}</var>
+<doc>Returns random billing data</doc>
+<status status="PASS" start="2025-10-28T10:43:46.239879" elapsed="0.004657"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.246102" level="INFO">Types the text 'Elsa' in the given field.</msg>
+<arg>${BILLING_FIRST_NAME}</arg>
+<arg>${billing_data['first_name']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.244750" elapsed="0.107515"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.354060" level="INFO">Types the text 'Johansson' in the given field.</msg>
+<arg>${BILLING_LAST_NAME}</arg>
+<arg>${billing_data['last_name']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.352535" elapsed="0.038898"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.393357" level="INFO">Types the text '070-692 2438' in the given field.</msg>
+<arg>${BILLING_PHONE}</arg>
+<arg>${billing_data['phone_number']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.391740" elapsed="0.196909"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:46.589542" level="INFO">Clicks the element '//*[@id="select2-chosen-1"]'.</msg>
+<arg>${BILLING_COUNTRY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.588837" elapsed="0.085781"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.675997" level="INFO">Types the text 'Sweden' in the given field.</msg>
+<arg>${BILLING_COUNTRY_SEARCH}</arg>
+<arg>${billing_data['country']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.674853" elapsed="0.129463"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>${BILLING_COUNTRY_SEARCH}</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.804617" elapsed="0.024930"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:46.832196" level="INFO">Types the text 'Nilssons gata 66' in the given field.</msg>
+<arg>${BILLING_STREET_ADDRESS}</arg>
+<arg>${billing_data['street_address']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:46.829988" elapsed="0.209723"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:47.041567" level="INFO">Types the text 'Umeå' in the given field.</msg>
+<arg>${BILLING_CITY}</arg>
+<arg>${billing_data['city']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.040013" elapsed="0.049136"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:47.090675" level="INFO">Types the text '45971' in the given field.</msg>
+<arg>${BILLING_POST_CODE}</arg>
+<arg>${billing_data['post_code']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.089462" elapsed="0.033524"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:47.124576" level="INFO">Clicks the element 'css=div#payment &gt;&gt; text=Cash on Delivery'.</msg>
+<arg>css=div#payment &gt;&gt; text=${billing_data['payment_method']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.123274" elapsed="0.387838"/>
+</kw>
+<doc>Adds billing details on the checkout page from test data</doc>
+<status status="PASS" start="2025-10-28T10:43:46.239034" elapsed="1.272276"/>
+</kw>
+<kw name="Place Order And Verify Order Received" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:47.513002" level="INFO">Clicks the element '//input[@id='place_order']'.</msg>
+<arg>${PLACE_ORDER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.512191" elapsed="0.336627"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:49.602811" level="INFO">Waited for Element with selector //p[@class='woocommerce-thankyou-order-received'] at state visible</msg>
+<arg>${ORDER_RECEIVED}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.849198" elapsed="1.753943"/>
+</kw>
+<doc>Places the order and verifies that the order was received</doc>
+<status status="PASS" start="2025-10-28T10:43:47.511584" elapsed="2.091869"/>
+</kw>
+<doc>Tests to use a discount coupon during the purchase process</doc>
+<status status="PASS" start="2025-10-28T10:43:37.527665" elapsed="12.076182"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:43:50.652393" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:49.638350" elapsed="1.014430"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:32.561992" elapsed="18.091048"/>
+</suite>
+<suite id="s1-s4" name="Filter" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\filter.robot">
+<test id="s1-s4-t1" name="Set Price Filter Range From 150 To 250" line="9">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:32.806412" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-28T10:43:32.806064" elapsed="3.923696"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:32.805398" elapsed="3.924662"/>
+</kw>
+<kw name="Set Range From 150 To 250" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:43:36.731269" elapsed="0.048176"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:36.780234" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:36.779714" elapsed="0.227306"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:37.007567" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:37.007222" elapsed="1.734963"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:38.760291" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="d0de9650b4fee9db1dc3102320f26088", element="f.31D8B7AC6B5930E965F15882D70AA078.d.4C4923B3C6046749F98D970622B96F76.e.395")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.742499" elapsed="0.017890"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:38.790918" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="d0de9650b4fee9db1dc3102320f26088", element="f.31D8B7AC6B5930E965F15882D70AA078.d.4C4923B3C6046749F98D970622B96F76.e.396")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.760741" elapsed="0.030224"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:43:38.791123" elapsed="0.620096"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>-143</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.411464" elapsed="0.565992"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:39.978212" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:39.977740" elapsed="1.009674"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:43:40.987743" elapsed="0.035257"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:41.052838" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹150 — ₹250'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹150 — ₹250</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.023528" elapsed="0.029478"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:36.730495" elapsed="4.322702"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:41.053589" elapsed="2.253577"/>
+</kw>
+<doc>Tests to set price filter range from 150 to 250</doc>
+<status status="PASS" start="2025-10-28T10:43:32.804768" elapsed="10.502626"/>
+</test>
+<test id="s1-s4-t2" name="Set Price Filter Range From 251 To 350" line="13">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:43.310228" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-28T10:43:43.309709" elapsed="4.601168"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:43.309129" elapsed="4.601913"/>
+</kw>
+<kw name="Set Range From 251 To 350" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.911710" elapsed="0.025908"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:47.938638" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:47.938054" elapsed="0.307021"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:48.245978" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:48.245418" elapsed="1.906975"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:50.187255" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ec735062b92f93f87f82d069188cd38e", element="f.556402CA3D784F627F332AE9C737E1E7.d.0D468FC7EEF44CC4890D6C3B54A3D120.e.394")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:50.152791" elapsed="0.034552"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:50.204341" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ec735062b92f93f87f82d069188cd38e", element="f.556402CA3D784F627F332AE9C737E1E7.d.0D468FC7EEF44CC4890D6C3B54A3D120.e.395")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:50.187632" elapsed="0.016797"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>58</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:43:50.204700" elapsed="0.612264"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>-86</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:43:50.817472" elapsed="0.541038"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:51.359140" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:51.358780" elapsed="0.913772"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:43:52.272845" elapsed="0.062016"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:52.366341" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹251 — ₹350'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹251 — ₹350</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-28T10:43:52.335128" elapsed="0.031359"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:47.911304" elapsed="4.455354"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:52.367063" elapsed="2.423738"/>
+</kw>
+<doc>Tests to set price filter range from 251 to 350</doc>
+<status status="PASS" start="2025-10-28T10:43:43.308130" elapsed="11.482857"/>
+</test>
+<test id="s1-s4-t3" name="Set Price Filter Range From 351 To 500" line="17">
+<kw name="Open Selenium Browser Headless" owner="selenium" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:54.793307" level="INFO">Opening browser 'headlesschrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-28T10:43:54.792763" elapsed="4.399160"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:54.792155" elapsed="4.400028"/>
+</kw>
+<kw name="Set Range From 351 To 500" owner="selenium">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_CONSENT_NO}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.193578" elapsed="0.186017"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:59.380716" level="INFO">Clicking element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.380040" elapsed="0.475487"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:43:59.856391" level="INFO">Clicking element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.855850" elapsed="1.658884"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:44:01.534480" level="INFO">${left_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6f0f6395e81e002492b2b8c06ed27acf", element="f.70B3E7184A293F6665DBBCF9616E3BBF.d.54456248B23C48AA0BC83410C2E3E5B8.e.400")&gt;</msg>
+<var>${left_handle}</var>
+<arg>css=.price_slider span:nth-child(2)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:44:01.515023" elapsed="0.019542"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:44:01.561913" level="INFO">${right_handle} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6f0f6395e81e002492b2b8c06ed27acf", element="f.70B3E7184A293F6665DBBCF9616E3BBF.d.54456248B23C48AA0BC83410C2E3E5B8.e.401")&gt;</msg>
+<var>${right_handle}</var>
+<arg>css=.price_slider span:nth-child(3)</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:44:01.534807" elapsed="0.027198"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${left_handle}</arg>
+<arg>115</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:44:01.562315" elapsed="0.560493"/>
+</kw>
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>${right_handle}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-10-28T10:44:02.123001" elapsed="0.559881"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:44:02.683991" level="INFO">Clicking element '//button[normalize-space()='Filter']'.</msg>
+<arg>${FILTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T10:44:02.683215" elapsed="1.367371"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FILTER_PRICE}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.050803" elapsed="0.041780"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-28T10:44:04.132872" level="INFO">Element '(//div[@class='price_label'])[1]' contains text 'Price: ₹351 — ₹500'.</msg>
+<arg>${FILTER_PRICE}</arg>
+<arg>Price: ₹351 — ₹500</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.092955" elapsed="0.040100"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:43:59.192622" elapsed="4.940650"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.133669" elapsed="2.264902"/>
+</kw>
+<doc>Tests to set price filter range from 351 to 500</doc>
+<status status="PASS" start="2025-10-28T10:43:54.791516" elapsed="11.607229"/>
+</test>
+<status status="PASS" start="2025-10-28T10:43:32.559559" elapsed="33.840087"/>
+</suite>
+<suite id="s1-s5" name="Login" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\login.robot">
+<test id="s1-s5-t1" name="Login Test with Valid Credentials" line="9">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:51.085345" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\944fc568-a3ec-42a2-94ae-0fe94d38584b"}</msg>
+<msg time="2025-10-28T10:43:51.113690" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51395</msg>
+<msg time="2025-10-28T10:43:52.462206" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\944fc568-a3ec-42a2-94ae-0fe94d38584b"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:51.084627" elapsed="1.377917"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:56.360164" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:56.360304" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:52.463014" elapsed="3.897767"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:56.362490" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:56.361151" elapsed="0.340482"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:51.083971" elapsed="5.617914"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:56.704335" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:56.703447" elapsed="1.079609"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:57.785119" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.783667" elapsed="0.310168"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:58.095584" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:58.094246" elapsed="0.367146"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:58.463096" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:58.461781" elapsed="0.862939"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:43:59.465123" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.325127" elapsed="0.140556"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:43:56.702323" elapsed="2.763696"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:00.041917" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.466614" elapsed="0.575595"/>
+</kw>
+<doc>Tests logging in with valid credentials</doc>
+<status status="PASS" start="2025-10-28T10:43:51.083223" elapsed="8.959158"/>
+</test>
+<test id="s1-s5-t2" name="Login Test with Invalid Credentials" line="13">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:00.062242" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\49de484f-edf9-4efe-9742-775f7a58a09d"}</msg>
+<msg time="2025-10-28T10:44:00.401848" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\49de484f-edf9-4efe-9742-775f7a58a09d"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:00.060358" elapsed="0.341759"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:04.065012" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:04.065125" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:00.402616" elapsed="3.662714"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:04.066697" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.065665" elapsed="0.308194"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:00.058826" elapsed="4.315284"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:04.377041" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.375618" elapsed="0.530819"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:04.908590" level="INFO">Types the text 'invalid_user' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:04.906864" elapsed="0.237985"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:05.146100" level="INFO">Types the text 'invalid_pass' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.145213" elapsed="0.080383"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:05.227296" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.225973" elapsed="0.559522"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:05.949307" level="INFO">Waited for Element with selector //ul[@class='woocommerce-error'] at state visible</msg>
+<arg>${LOGIN_ERROR}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.785835" elapsed="0.163648"/>
+</kw>
+<arg>invalid_user</arg>
+<arg>invalid_pass</arg>
+<doc>Logs in with invalid credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:04.374635" elapsed="1.574973"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:06.389419" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:05.949888" elapsed="0.439778"/>
+</kw>
+<doc>Tests logging in with invalid credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:00.053581" elapsed="6.336252"/>
+</test>
+<test id="s1-s5-t3" name="Login Test with Empty Credentials" line="17">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:06.425398" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\bf7d7a71-71ed-4ea3-baa8-4d5f3ae7cd1d"}</msg>
+<msg time="2025-10-28T10:44:06.909372" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\bf7d7a71-71ed-4ea3-baa8-4d5f3ae7cd1d"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.423624" elapsed="0.486023"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:10.438465" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:10.438627" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.910264" elapsed="3.528735"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:10.440607" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:10.439345" elapsed="0.250123"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:06.422303" elapsed="4.267419"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:10.693985" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:10.692761" elapsed="0.657025"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:11.351881" level="INFO">Types the text '' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:11.350195" elapsed="0.156655"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:11.508567" level="INFO">Types the text '' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:11.507223" elapsed="0.043561"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:11.551718" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:11.551028" elapsed="0.594412"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:12.294427" level="INFO">Waited for Element with selector //ul[@class='woocommerce-error'] at state visible</msg>
+<arg>${LOGIN_ERROR}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:12.145882" elapsed="0.148853"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<doc>Logs in with invalid credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:10.690168" elapsed="1.604864"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:12.864979" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:12.295654" elapsed="0.569574"/>
+</kw>
+<doc>Tests logging in with empty credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:06.416536" elapsed="6.448854"/>
+</test>
+<test id="s1-s5-t4" name="Login Test with Valid Username and Empty Password" line="21">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:12.877066" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\f7e1961b-cbd8-4acd-a4e2-e20961222e9b"}</msg>
+<msg time="2025-10-28T10:44:13.255522" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\f7e1961b-cbd8-4acd-a4e2-e20961222e9b"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:12.875597" elapsed="0.380248"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:17.622072" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:17.622305" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:13.256627" elapsed="4.366000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:17.624944" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.623199" elapsed="0.383718"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:12.874591" elapsed="5.132597"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:18.012582" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.010013" elapsed="0.856613"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:18.868122" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.866935" elapsed="0.377176"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:19.245601" level="INFO">Types the text '' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.244462" elapsed="0.150489"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:19.396211" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.395265" elapsed="0.498478"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:20.083431" level="INFO">Waited for Element with selector //ul[@class='woocommerce-error'] at state visible</msg>
+<arg>${LOGIN_ERROR}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.894108" elapsed="0.189621"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${EMPTY}</arg>
+<doc>Logs in with invalid credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:18.007637" elapsed="2.076276"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:20.612881" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:20.084390" elapsed="0.528744"/>
+</kw>
+<doc>Tests logging in with valid username and empty password</doc>
+<status status="PASS" start="2025-10-28T10:44:12.870540" elapsed="7.742755"/>
+</test>
+<test id="s1-s5-t5" name="Login Test with Empty Username and Valid Password" line="25">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:20.631575" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\0ef407e9-dd14-406e-8bff-d141b7458c27"}</msg>
+<msg time="2025-10-28T10:44:21.369705" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\4\\browser\\traces\\temp\\0ef407e9-dd14-406e-8bff-d141b7458c27"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:20.630129" elapsed="0.739900"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:24.378396" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:24.378642" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:21.370517" elapsed="3.008473"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.381365" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.379386" elapsed="0.608831"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:20.629185" elapsed="4.359401"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.992081" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.990857" elapsed="0.617548"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:25.609836" level="INFO">Types the text '' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.608735" elapsed="0.197128"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:25.807336" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.806259" elapsed="0.237562"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:26.046428" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:26.044374" elapsed="0.612511"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:26.750572" level="INFO">Waited for Element with selector //ul[@class='woocommerce-error'] at state visible</msg>
+<arg>${LOGIN_ERROR}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:26.657087" elapsed="0.093703"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs in with invalid credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:24.989024" elapsed="1.761981"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:27.141150" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:26.751321" elapsed="0.389981"/>
+</kw>
+<doc>Tests logging in with empty username and valid password</doc>
+<status status="PASS" start="2025-10-28T10:44:20.624322" elapsed="6.517076"/>
+</test>
+<status status="PASS" start="2025-10-28T10:43:49.212373" elapsed="37.935244"/>
+</suite>
+<suite id="s1-s6" name="Register" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\register.robot">
+<test id="s1-s6-t1" name="Register New User With Valid Credentials" line="9">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:43:52.918744" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\e18859a9-2e8f-424c-81cc-7340f507f6bb"}</msg>
+<msg time="2025-10-28T10:43:52.947901" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61777</msg>
+<msg time="2025-10-28T10:43:54.404671" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\e18859a9-2e8f-424c-81cc-7340f507f6bb"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:43:52.917831" elapsed="1.487143"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:43:57.363531" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:43:57.363805" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:43:54.405380" elapsed="2.958785"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:57.365957" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.364563" elapsed="0.357500"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:43:52.916522" elapsed="4.805824"/>
+</kw>
+<kw name="Register New User Using Valid Credentials" owner="common_keywords">
+<kw name="Get Register Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:43:57.736128" level="INFO">&amp;{register_data} = { email=elina39@example.org | password=Tx8!R0bZpH4 }</msg>
+<var>&amp;{register_data}</var>
+<doc>Returns random register data</doc>
+<status status="PASS" start="2025-10-28T10:43:57.723919" elapsed="0.012319"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:43:57.737781" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:57.736567" elapsed="0.919472"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:58.658786" level="INFO">Types the text 'elina39@example.org' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>${register_data['email']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:58.656395" elapsed="0.814396"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:43:59.473217" level="INFO">Types the text 'Tx8!R0bZpH4' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${register_data['password']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.471158" elapsed="0.188473"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:44:00.665108" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:43:59.660052" elapsed="1.005271"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:00.668053" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:00.665848" elapsed="0.223066"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:00.906875" level="INFO">Waited for Element with selector //input[@name='register'] at state visible</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:00.889314" elapsed="0.017841"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:00.908948" level="INFO">Clicks the element '//input[@name='register']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:00.907508" elapsed="0.891973"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:01.868160" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:01.799862" elapsed="0.068498"/>
+</kw>
+<doc>Registers a new user using valid credentials</doc>
+<status status="PASS" start="2025-10-28T10:43:57.722878" elapsed="4.145640"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:02.207866" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:01.868861" elapsed="0.339225"/>
+</kw>
+<doc>Tests to register a new user with valid credentials</doc>
+<status status="PASS" start="2025-10-28T10:43:52.915508" elapsed="9.292775"/>
+</test>
+<test id="s1-s6-t2" name="Register New User With Existing Credentials" line="13">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:02.219483" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\3b0a7723-a00f-42f1-af95-405064f26f10"}</msg>
+<msg time="2025-10-28T10:44:02.518154" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\3b0a7723-a00f-42f1-af95-405064f26f10"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:02.218524" elapsed="0.299908"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:06.191535" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:06.191710" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:02.518833" elapsed="3.673147"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:06.193687" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.192364" elapsed="0.289194"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:02.217883" elapsed="4.264088"/>
+</kw>
+<kw name="Register User With Existing Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:06.485127" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:06.483596" elapsed="0.863737"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:07.349473" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:07.347913" elapsed="0.264401"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:07.613957" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:07.612744" elapsed="0.052845"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:44:08.666913" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:44:07.665894" elapsed="1.001130"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:08.667770" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:08.667196" elapsed="0.079049"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:08.752297" level="INFO">Waited for Element with selector //input[@name='register'] at state visible</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:08.746490" elapsed="0.005953"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:08.753173" level="INFO">Clicks the element '//input[@name='register']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:08.752621" elapsed="0.509495"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:09.367502" level="INFO">Waited for Element with selector //li[contains(text(),'An account is already registered with your email a')] at state visible</msg>
+<arg>${EXISTING_REGISTER_ERROR}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:09.262322" elapsed="0.105402"/>
+</kw>
+<doc>Attempts to register a user with existing credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:06.482431" elapsed="2.885476"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:09.704163" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:09.368275" elapsed="0.336125"/>
+</kw>
+<doc>Tests to register a new user with existing credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:02.215450" elapsed="7.489109"/>
+</test>
+<test id="s1-s6-t3" name="Register New User With Empty Credentials" line="17">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:09.716693" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\6efe7f18-4976-44ee-bd9c-020e9629e63e"}</msg>
+<msg time="2025-10-28T10:44:10.039405" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\6efe7f18-4976-44ee-bd9c-020e9629e63e"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:09.715378" elapsed="0.324454"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:13.018761" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:13.018858" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:10.040498" elapsed="2.978493"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:13.019913" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:13.019212" elapsed="0.659026"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:09.714616" elapsed="3.964154"/>
+</kw>
+<kw name="Register User With Empty Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:13.682468" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:13.680797" elapsed="0.817718"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:44:15.500519" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:44:14.498969" elapsed="1.001768"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:15.503885" level="INFO">Types the text '' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>${EMPTY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.501224" elapsed="0.072448"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:15.577271" level="INFO">Types the text '' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${EMPTY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.574313" elapsed="0.078497"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:15.654622" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.653177" elapsed="0.061977"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-10-28T10:44:15.824146" level="INFO">Property: True</msg>
+<msg time="2025-10-28T10:44:15.824477" level="INFO">${is_disabled} = True</msg>
+<var>${is_disabled}</var>
+<arg>${REGISTER_BUTTON}</arg>
+<arg>disabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.715591" elapsed="0.108971"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_disabled}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.824904" elapsed="0.000724"/>
+</kw>
+<doc>Attempts to register a user with empty credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:13.679379" elapsed="2.146470"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:16.581229" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.826292" elapsed="0.755208"/>
+</kw>
+<doc>Tests to register a new user with empty credentials</doc>
+<status status="PASS" start="2025-10-28T10:44:09.711338" elapsed="6.870350"/>
+</test>
+<test id="s1-s6-t4" name="Register New User With Invalid Email" line="21">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:16.598294" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\19ff2287-eedc-4464-8c9b-7860dabde232"}</msg>
+<msg time="2025-10-28T10:44:16.943170" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\19ff2287-eedc-4464-8c9b-7860dabde232"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:16.597248" elapsed="0.346222"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:21.254988" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:21.255149" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:16.943798" elapsed="4.311689"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:21.257157" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:21.255908" elapsed="0.585104"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:16.596456" elapsed="5.245215"/>
+</kw>
+<kw name="Register User With Invalid Email" owner="common_keywords">
+<kw name="Get Register Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:44:21.849977" level="INFO">&amp;{register_data} = { email=marja45@testmail.com | password=Do5$R9jZnQf }</msg>
+<var>&amp;{register_data}</var>
+<doc>Returns random register data</doc>
+<status status="PASS" start="2025-10-28T10:44:21.844898" elapsed="0.005172"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:21.851629" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:21.850392" elapsed="0.811114"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:22.663115" level="INFO">Types the text 'invalidemail' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>invalidemail</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:22.661940" elapsed="0.291290"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:22.955109" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:22.953596" elapsed="0.255036"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:44:24.209895" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:44:23.208944" elapsed="1.001118"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.211185" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.210320" elapsed="0.053106"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:24.275795" level="INFO">Waited for Element with selector //input[@name='register'] at state visible</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.263776" elapsed="0.012190"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.276967" level="INFO">Clicks the element '//input[@name='register']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.276183" elapsed="0.107742"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-10-28T10:44:24.401575" level="INFO">${visible} = 0</msg>
+<var>${visible}</var>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.384295" elapsed="0.017437"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2025-10-28T10:44:24.403413" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${visible}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.402201" elapsed="0.001423"/>
+</kw>
+<doc>Attempts to register a user with an invalid email</doc>
+<status status="PASS" start="2025-10-28T10:44:21.842666" elapsed="2.561285"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:25.445930" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.404412" elapsed="1.041728"/>
+</kw>
+<doc>Tests to register a new user with invalid email</doc>
+<status status="PASS" start="2025-10-28T10:44:16.593111" elapsed="8.853166"/>
+</test>
+<test id="s1-s6-t5" name="Register New User With Invalid Password" line="25">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:25.460843" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\2d4b22df-6057-47b4-8a98-fe2feec37468"}</msg>
+<msg time="2025-10-28T10:44:25.837716" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\5\\browser\\traces\\temp\\2d4b22df-6057-47b4-8a98-fe2feec37468"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.459345" elapsed="0.378639"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:28.699134" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:28.699279" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.838309" elapsed="2.861275"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:28.701455" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:28.699926" elapsed="0.181545"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:25.458429" elapsed="3.423196"/>
+</kw>
+<kw name="Register User With Invalid Password" owner="common_keywords">
+<kw name="Get Register Data" owner="CustomLibrary">
+<msg time="2025-10-28T10:44:28.888248" level="INFO">&amp;{register_data} = { email=milja19@example.org | password=Pr1!H9bXqJg }</msg>
+<var>&amp;{register_data}</var>
+<doc>Returns random register data</doc>
+<status status="PASS" start="2025-10-28T10:44:28.883777" elapsed="0.004529"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:28.889457" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:28.888508" elapsed="0.588275"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:29.477976" level="INFO">Types the text 'milja19@example.org' in the given field.</msg>
+<arg>${REGISTER_USERNAME}</arg>
+<arg>${register_data['email']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:29.476966" elapsed="0.292192"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:29.770021" level="INFO">Types the text 'short' in the given field.</msg>
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>short</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:29.769401" elapsed="0.024627"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-28T10:44:30.794814" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-28T10:44:29.794215" elapsed="1.000768"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:30.796049" level="INFO">Clicks the element '//*[@id="customer_login"]/div[2]/form/p[3]'.</msg>
+<arg>${REGISTER_FORM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:30.795233" elapsed="0.067093"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-10-28T10:44:30.886591" level="INFO">Property: True</msg>
+<msg time="2025-10-28T10:44:30.886735" level="INFO">${is_disabled} = True</msg>
+<var>${is_disabled}</var>
+<arg>${REGISTER_BUTTON}</arg>
+<arg>disabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:30.862499" elapsed="0.024262"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_disabled}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-10-28T10:44:30.886936" elapsed="0.000311"/>
+</kw>
+<doc>Attempts to register a user with an invalid password</doc>
+<status status="PASS" start="2025-10-28T10:44:28.882449" elapsed="2.004870"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:31.323690" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:30.887471" elapsed="0.436463"/>
+</kw>
+<doc>Tests to register a new user with invalid password</doc>
+<status status="PASS" start="2025-10-28T10:44:25.453536" elapsed="5.870501"/>
+</test>
+<status status="PASS" start="2025-10-28T10:43:51.698458" elapsed="39.630496"/>
+</suite>
+<suite id="s1-s7" name="Search And Buy" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\search_and_buy.robot">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:09.013445" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\6\\browser\\traces\\temp\\332a30e3-0654-477a-aa08-bd426d862e58"}</msg>
+<msg time="2025-10-28T10:44:09.044154" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52098</msg>
+<msg time="2025-10-28T10:44:10.981713" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\6\\browser\\traces\\temp\\332a30e3-0654-477a-aa08-bd426d862e58"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:09.012664" elapsed="1.969337"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:14.239609" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:14.239851" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:10.982491" elapsed="3.257842"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:14.242335" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:14.240824" elapsed="0.270443"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:09.011878" elapsed="5.499637"/>
+</kw>
+<test id="s1-s7-t1" name="Search Given Book And Buy It" line="13">
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:14.535398" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:14.534740" elapsed="0.751269"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:15.288608" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.287055" elapsed="0.752525"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:16.041367" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:16.039939" elapsed="0.146261"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:16.187809" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:16.186567" elapsed="0.938922"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:17.234472" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.126059" elapsed="0.108689"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:44:14.534044" elapsed="2.700930"/>
+</kw>
+<kw name="Search For Book" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:17.237852" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.236408" elapsed="0.861041"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:18.099089" level="INFO">Types the text 'Android Quick Start Guide' in the given field.</msg>
+<arg>${SEARCH_BAR}</arg>
+<arg>${book_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.097832" elapsed="0.384158"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>${SEARCH_BAR}</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.482828" elapsed="0.641507"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:19.126172" level="INFO">Clicks the element '//h2[@class="post-title entry-title"]/a[normalize-space(text())="Android Quick Start Guide"]'.</msg>
+<arg>//h2[@class="post-title entry-title"]/a[normalize-space(text())="${book_name}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.124737" elapsed="0.746225"/>
+</kw>
+<arg>${book_name}</arg>
+<doc>Searches for a given book by name</doc>
+<status status="PASS" start="2025-10-28T10:44:17.235358" elapsed="2.635904"/>
+</kw>
+<kw name="Add Products To Basket" owner="common_keywords">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-10-28T10:44:20.381747" level="INFO">Found locator('text=Add to basket').first() Locators successfully.</msg>
+<msg time="2025-10-28T10:44:20.382200" level="INFO">${buttons} = ['text=Add to basket &gt;&gt; nth=0']</msg>
+<var>${buttons}</var>
+<arg>text=Add to basket</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.872523" elapsed="0.509753"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:20.384772" level="INFO">Clicks the element 'text=Add to basket &gt;&gt; nth=0'.</msg>
+<arg>${btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:20.383765" elapsed="0.563581"/>
+</kw>
+<var name="${btn}">text=Add to basket &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-10-28T10:44:20.383279" elapsed="0.564237"/>
+</iter>
+<var>${btn}</var>
+<value>@{buttons}</value>
+<status status="PASS" start="2025-10-28T10:44:20.382525" elapsed="0.565131"/>
+</for>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:20.949042" level="INFO">Clicks the element '//a[@title='View your shopping cart']'.</msg>
+<arg>${SHOPPING_CART}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:20.947938" elapsed="1.022694"/>
+</kw>
+<doc>Adds all products to the shopping basket</doc>
+<status status="PASS" start="2025-10-28T10:44:19.871677" elapsed="2.099347"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:21.972732" level="INFO">Clicks the element '//a[normalize-space()='Proceed to Checkout']'.</msg>
+<arg>${CHECKOUT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:21.971303" elapsed="0.594458"/>
+</kw>
+<kw name="Place Order And Verify Order Received" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:22.568859" level="INFO">Clicks the element '//input[@id='place_order']'.</msg>
+<arg>${PLACE_ORDER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:22.566994" elapsed="1.556418"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:24.382640" level="INFO">Waited for Element with selector //p[@class='woocommerce-thankyou-order-received'] at state visible</msg>
+<arg>${ORDER_RECEIVED}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.123710" elapsed="0.259234"/>
+</kw>
+<doc>Places the order and verifies that the order was received</doc>
+<status status="PASS" start="2025-10-28T10:44:22.566167" elapsed="1.817023"/>
+</kw>
+<doc>Tests to search for a given book and buy it</doc>
+<status status="PASS" start="2025-10-28T10:44:14.511680" elapsed="9.871810"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:25.364006" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.425095" elapsed="0.939930"/>
+</kw>
+<status status="PASS" start="2025-10-28T10:44:08.047691" elapsed="17.319259"/>
+</suite>
+<suite id="s1-s8" name="Sorting" source="C:\Users\JussiJokinen_k5ltbdd\book_store\tests\sorting.robot">
+<test id="s1-s8-t1" name="Sort Products By Price From Low To High" line="9">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:09.694760" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\4f0c93bf-1245-4862-86dc-0e143aa2a7bc"}</msg>
+<msg time="2025-10-28T10:44:09.737722" level="INFO">Starting Browser process C:\Users\JussiJokinen_k5ltbdd\book_store\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52106</msg>
+<msg time="2025-10-28T10:44:12.172274" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\4f0c93bf-1245-4862-86dc-0e143aa2a7bc"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:09.692993" elapsed="2.479584"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:15.416929" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:15.417121" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:12.173046" elapsed="3.244393"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:15.419716" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.418120" elapsed="0.463323"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:09.691279" elapsed="6.190529"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:15.885077" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:15.883768" elapsed="1.118913"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:17.004722" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.003250" elapsed="0.709435"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:17.713694" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.712937" elapsed="0.095717"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:17.810744" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:17.809181" elapsed="0.975537"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:18.885200" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.785114" elapsed="0.100278"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:44:15.882502" elapsed="3.004841"/>
+</kw>
+<kw name="Sort Products From Low To High" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:18.891567" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:18.889453" elapsed="0.588499"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-10-28T10:44:19.479710" level="INFO">Selects the option(s) Sort by price: low to high by attribute SelectAttribute.label from element //select[@name='orderby'].</msg>
+<arg>${SORTING_DROPDOWN}</arg>
+<arg>label</arg>
+<arg>Sort by price: low to high</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.478329" elapsed="0.181478"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-28T10:44:19.881150" level="INFO">Text: 'Sort by price: low to high'</msg>
+<msg time="2025-10-28T10:44:19.881370" level="INFO">${selected_text} = Sort by price: low to high</msg>
+<var>${selected_text}</var>
+<arg>select.orderby &gt;&gt; option:checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.660227" elapsed="0.221192"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_text}</arg>
+<arg>Sort by price: low to high</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.881648" elapsed="0.000742"/>
+</kw>
+<doc>Sorts products from low to high based on price</doc>
+<status status="PASS" start="2025-10-28T10:44:18.887986" elapsed="0.994683"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:20.474541" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:19.883162" elapsed="0.591702"/>
+</kw>
+<doc>Tests to sort products by price from low to high</doc>
+<status status="PASS" start="2025-10-28T10:44:09.689745" elapsed="10.785403"/>
+</test>
+<test id="s1-s8-t2" name="Sort Products By Price From High To Low" line="14">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:20.494500" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\d0fd2b04-2d1f-45de-baed-657151a72a88"}</msg>
+<msg time="2025-10-28T10:44:21.020364" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\d0fd2b04-2d1f-45de-baed-657151a72a88"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:20.493239" elapsed="0.527527"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:24.154226" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:24.154339" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:21.021218" elapsed="3.133325"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.155922" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.154876" elapsed="0.241475"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:20.492280" elapsed="3.904308"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:24.399167" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:24.397954" elapsed="1.016717"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:25.417097" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.415174" elapsed="0.278946"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:25.695333" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.694422" elapsed="0.298116"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:25.994454" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:25.992907" elapsed="0.855066"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:26.923804" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:26.848189" elapsed="0.075796"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:44:24.396968" elapsed="2.527137"/>
+</kw>
+<kw name="Sort Products From High To Low" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:26.925607" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:26.924897" elapsed="0.469865"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-10-28T10:44:27.396010" level="INFO">Selects the option(s) Sort by price: high to low by attribute SelectAttribute.label from element //select[@name='orderby'].</msg>
+<arg>${SORTING_DROPDOWN}</arg>
+<arg>label</arg>
+<arg>Sort by price: high to low</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:27.395005" elapsed="0.083271"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-28T10:44:27.606227" level="INFO">Text: 'Sort by price: high to low'</msg>
+<msg time="2025-10-28T10:44:27.606436" level="INFO">${selected_text} = Sort by price: high to low</msg>
+<var>${selected_text}</var>
+<arg>select.orderby &gt;&gt; option:checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:27.478540" elapsed="0.127938"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_text}</arg>
+<arg>Sort by price: high to low</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-10-28T10:44:27.606725" elapsed="0.000498"/>
+</kw>
+<doc>Sorts products from high to low based on price</doc>
+<status status="PASS" start="2025-10-28T10:44:26.924346" elapsed="0.682991"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:28.079446" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:27.607664" elapsed="0.471915"/>
+</kw>
+<doc>Tests to sort products by price from high to low</doc>
+<status status="PASS" start="2025-10-28T10:44:20.485260" elapsed="7.594402"/>
+</test>
+<test id="s1-s8-t3" name="Sort Products By Average Rating" line="19">
+<kw name="Open New Browser" owner="common_keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-28T10:44:28.088788" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\0882120a-1cd0-4ee0-90e6-fc862c902396"}</msg>
+<msg time="2025-10-28T10:44:28.342684" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\JussiJokinen_k5ltbdd\\book_store\\pabot_results\\7\\browser\\traces\\temp\\0882120a-1cd0-4ee0-90e6-fc862c902396"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-28T10:44:28.087841" elapsed="0.255349"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-28T10:44:31.583813" level="INFO">Successfully initialized new page object and opened url: https://practice.automationtesting.in/</msg>
+<msg time="2025-10-28T10:44:31.583965" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-28T10:44:28.343729" elapsed="3.240452"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:31.585542" level="INFO">Clicks the element '//button[@aria-label='Do not consent']'.</msg>
+<arg>${LOGIN_CONSENT_NO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:31.584535" elapsed="0.160899"/>
+</kw>
+<doc>Opens a new browser and navigates to the base URL</doc>
+<status status="PASS" start="2025-10-28T10:44:28.087181" elapsed="3.658368"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:31.746903" level="INFO">Clicks the element '//a[normalize-space()='My Account']'.</msg>
+<arg>${MY_ACCOUNT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:31.746414" elapsed="0.493667"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:32.240851" level="INFO">Types the text 'testaaja@test.com' in the given field.</msg>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:32.240308" elapsed="0.329504"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-28T10:44:32.570621" level="INFO">Types the text 'Testaaja123*' in the given field.</msg>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:32.570083" elapsed="0.026695"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:32.597917" level="INFO">Clicks the element '//input[@name='login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:32.596959" elapsed="0.840689"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-28T10:44:33.493012" level="INFO">Waited for Element with selector //a[normalize-space()='Logout'] at state visible</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-28T10:44:33.438301" elapsed="0.054892"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T10:44:31.745889" elapsed="1.747448"/>
+</kw>
+<kw name="Sort Products By Rating" owner="common_keywords">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-28T10:44:33.494905" level="INFO">Clicks the element '//a[normalize-space()='Shop']'.</msg>
+<arg>${SHOP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:33.494148" elapsed="0.489697"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-10-28T10:44:33.984660" level="INFO">Selects the option(s) Sort by average rating by attribute SelectAttribute.label from element //select[@name='orderby'].</msg>
+<arg>${SORTING_DROPDOWN}</arg>
+<arg>label</arg>
+<arg>Sort by average rating</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:33.984032" elapsed="0.082756"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-28T10:44:34.080658" level="INFO">Text: 'Sort by average rating'</msg>
+<msg time="2025-10-28T10:44:34.080849" level="INFO">${selected_text} = Sort by average rating</msg>
+<var>${selected_text}</var>
+<arg>select.orderby &gt;&gt; option:checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-28T10:44:34.066969" elapsed="0.013922"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_text}</arg>
+<arg>Sort by average rating</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-10-28T10:44:34.081129" elapsed="0.000312"/>
+</kw>
+<doc>Sorts products by average rating</doc>
+<status status="PASS" start="2025-10-28T10:44:33.493583" elapsed="0.587925"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-10-28T10:44:34.421481" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T10:44:34.081810" elapsed="0.339943"/>
+</kw>
+<doc>Tests to sort products by average rating</doc>
+<status status="PASS" start="2025-10-28T10:44:28.084418" elapsed="6.337415"/>
+</test>
+<status status="PASS" start="2025-10-28T10:44:08.743304" elapsed="25.681639"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 8 executions.</doc>
+<status status="PASS" start="2025-10-28T10:43:32.544000" elapsed="61.883000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="23" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="23" fail="0" skip="0">Tests</stat>
+<stat name="Buy New Arrivals" id="s1-s1" pass="1" fail="0" skip="0">Tests.Buy New Arrivals</stat>
+<stat name="Categories" id="s1-s2" pass="4" fail="0" skip="0">Tests.Categories</stat>
+<stat name="Discount Coupon" id="s1-s3" pass="1" fail="0" skip="0">Tests.Discount Coupon</stat>
+<stat name="Filter" id="s1-s4" pass="3" fail="0" skip="0">Tests.Filter</stat>
+<stat name="Login" id="s1-s5" pass="5" fail="0" skip="0">Tests.Login</stat>
+<stat name="Register" id="s1-s6" pass="5" fail="0" skip="0">Tests.Register</stat>
+<stat name="Search And Buy" id="s1-s7" pass="1" fail="0" skip="0">Tests.Search And Buy</stat>
+<stat name="Sorting" id="s1-s8" pass="3" fail="0" skip="0">Tests.Sorting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
