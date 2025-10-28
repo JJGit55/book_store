@@ -1,5 +1,4 @@
 *** Settings ***
-
 Resource    ../resources/keywords/selenium.resource
 
 Test Setup       Open Selenium Browser Headless

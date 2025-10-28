@@ -25,4 +25,3 @@ Login Test with Valid Username and Empty Password
 Login Test with Empty Username and Valid Password
     [Documentation]    Tests logging in with empty username and valid password
     Login With Invalid Credentials   ${EMPTY}    ${PASSWORD}
-

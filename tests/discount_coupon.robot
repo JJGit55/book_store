@@ -1,6 +1,4 @@
 *** Settings ***
-Library    Browser
-
 Resource    ../resources/keywords/common_keywords.resource
 
 Suite Setup       Open New Browser

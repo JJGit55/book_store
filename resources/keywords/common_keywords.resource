@@ -8,6 +8,7 @@ Resource    ../resources/locators/locators.resource
 
 *** Keywords ***
 Open New Browser
+    [Documentation]    Opens a new browser and navigates to the base URL
     New Browser     chromium    headless=True
     New Page        ${URL}
     Click           ${LOGIN_CONSENT_NO}
@@ -48,6 +49,7 @@ Place Order And Verify Order Received
     Wait For Elements State    ${ORDER_RECEIVED}
 
 Login With Invalid Credentials
+    [Documentation]  Logs in with invalid credentials
     [Arguments]    ${USERNAME}          ${PASSWORD}
     Click          ${MY_ACCOUNT}
     Type Text      ${LOGIN_USERNAME}    ${USERNAME}
@@ -56,6 +58,7 @@ Login With Invalid Credentials
     Wait For Elements State    ${LOGIN_ERROR} 
 
 Register New User Using Valid Credentials
+    [Documentation]   Registers a new user using valid credentials
     &{register_data}=    Get Register Data
     Click          ${MY_ACCOUNT}
     Type Text      ${REGISTER_USERNAME}    ${register_data['email']}
@@ -67,6 +70,7 @@ Register New User Using Valid Credentials
     Wait For Elements State    ${LOGOUT_BUTTON}
 
 Register User With Existing Credentials
+    [Documentation]  Attempts to register a user with existing credentials
     Click          ${MY_ACCOUNT}
     Type Text      ${REGISTER_USERNAME}    ${USERNAME}
     Type Text      ${REGISTER_PASSWORD}    ${PASSWORD}
@@ -77,6 +81,7 @@ Register User With Existing Credentials
     Wait For Elements State    ${EXISTING_REGISTER_ERROR}
 
 Register User With Empty Credentials
+    [Documentation]  Attempts to register a user with empty credentials
     Click          ${MY_ACCOUNT}
     Sleep          1s
     Type Text      ${REGISTER_USERNAME}    ${EMPTY}
@@ -86,6 +91,7 @@ Register User With Empty Credentials
     Should Be True    ${is_disabled}
 
 Register User With Invalid Email
+    [Documentation]    Attempts to register a user with an invalid email
     &{register_data}=    Get Register Data
     Click          ${MY_ACCOUNT}
     Type Text      ${REGISTER_USERNAME}    invalidemail
@@ -98,6 +104,7 @@ Register User With Invalid Email
     Should Be Equal As Integers    ${visible}    0
 
 Register User With Invalid Password
+    [Documentation]    Attempts to register a user with an invalid password
     &{register_data}=    Get Register Data
     Click          ${MY_ACCOUNT}
     Type Text      ${REGISTER_USERNAME}    ${register_data['email']}
@@ -108,6 +115,7 @@ Register User With Invalid Password
     Should Be True    ${is_disabled}
 
 Sort Products From Low To High
+    [Documentation]   Sorts products from low to high based on price
     Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by price: low to high
@@ -115,6 +123,7 @@ Sort Products From Low To High
     Should Be Equal      ${selected_text}    Sort by price: low to high
 
 Sort Products From High To Low
+    [Documentation]   Sorts products from high to low based on price
     Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by price: high to low
@@ -122,20 +131,15 @@ Sort Products From High To Low
     Should Be Equal      ${selected_text}    Sort by price: high to low
 
 Sort Products By Rating
+    [Documentation]   Sorts products by average rating
     Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
     Click                ${SHOP}
     Select Options By    ${SORTING_DROPDOWN}    label    Sort by average rating
     ${selected_text}=    Get Text    select.orderby >> option:checked
     Should Be Equal      ${selected_text}    Sort by average rating
 
-Filter Products With Java Category
-    Click    ${SHOP}
-    Click    ${PRODUCT_GATEGORY_JAVA}
-    ${nav_text}=    Get Text    //*[@id="content"]/nav
-    Should Contain    ${nav_text}    JavaScript
-    
-
 Add Products To Basket
+    [Documentation]   Adds all products to the shopping basket
     ${buttons}=      Get Elements    text=Add to basket
     FOR    ${btn}    IN    @{buttons}
         Click        ${btn}
@@ -143,6 +147,40 @@ Add Products To Basket
     Click    ${SHOPPING_CART}
 
 Add Discount Coupon And Verify Discount
+    [Documentation]   Adds a discount coupon during purchase and verifies the discount is applied
     Type Text    ${COUPON_CODE_FIELD}    ${DISCOUNT_CODE}
     Click    ${APPLY_COUPON_BUTTON} 
     Wait For Elements State    //div[@class='woocommerce-message']
+
+Filter Products With Android Category
+    [Documentation]    Filters products with Android category
+    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
+    Click    ${SHOP}
+    Click    ${PRODUCT_GATEGORY_ANDROID}
+    ${current_url}=    Get Url
+    Should Contain    ${current_url}    product-category/android/
+
+Filter Products With HTML Category
+    [Documentation]    Filters products with HTML category
+    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
+    Click    ${SHOP}
+    Click    ${PRODUCT_GATEGORY_HTML}
+    ${current_url}=    Get Url
+    Should Contain    ${current_url}    product-category/html/
+
+Filter Products With Java Category
+    [Documentation]    Filters products with Java category
+    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
+    Click    ${SHOP}
+    Click    ${PRODUCT_GATEGORY_JAVA}
+    ${current_url}=    Get Url
+    Should Contain    ${current_url}    product-category/javascript/
+
+Filter Products With Selenium Category
+    [Documentation]    Filters products with Selenium category
+    Login With Valid Credentials    ${USERNAME}    ${PASSWORD}
+    Click    ${SHOP}
+    Click    ${PRODUCT_GATEGORY_SELENIUM}
+    ${current_url}=    Get Url
+    Should Contain    ${current_url}    product-category/selenium/
+
